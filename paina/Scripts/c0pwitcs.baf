@@ -10,6 +10,6 @@ THEN
 	SmallWait(5)
 	DestroyItem("c0phive3")
 	Wait(2)
-	SetName(~Forest Witch~)
+	SetName(~森林女巫~)
 	StartDialogueNoSet(Player1)
 END

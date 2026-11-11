@@ -1,0 +1,331 @@
+BACKUP ~Paina/backup~
+AUTHOR ~Artemius_I~
+AUTO_TRA ~%MOD_FOLDER%/translations/%s~
+ALWAYS
+  INCLUDE ~%MOD_FOLDER%/lib/a7#add_kit_ex.tpa~
+  INCLUDE ~%MOD_FOLDER%/lib/alter_script.tpa~
+  INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+  ACTION_IF (GAME_IS ~eet~) BEGIN
+    OUTER_SET bg2_chapter = 12
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+END
+
+LANGUAGE ~English~
+         ~English~
+         ~%MOD_FOLDER%/translations/english/paina.tra~
+
+BEGIN ~Pai'Na NPC for BG2:EE~
+
+COPY ~%MOD_FOLDER%/audio~ ~override~
+COPY ~%MOD_FOLDER%/items~ ~override~
+COPY ~%MOD_FOLDER%/spells~ ~override~
+
+ACTION_IF NOT MOD_IS_INSTALLED ~ArtisansKitpack.tp2~ ~5002~ THEN BEGIN
+INCLUDE ~%MOD_FOLDER%/lib/hivemaster.tpa~
+END
+	
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur.bcs~ THEN BEGIN
+EXTEND_TOP ~baldur.bcs~ ~%MOD_FOLDER%/scripts/rep.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bdbaldur.bcs~ THEN BEGIN
+EXTEND_TOP ~bdbaldur.bcs~ ~%MOD_FOLDER%/scripts/rep.baf~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~baldur25.bcs~ THEN BEGIN
+EXTEND_TOP ~baldur25.bcs~ ~%MOD_FOLDER%/scripts/rep.baf~
+END
+
+EXTEND_BOTTOM ~Viconia.bcs~ ~%MOD_FOLDER%/scripts/c0pvicf.baf~
+EXTEND_TOP ~AR6200.bcs~ ~%MOD_FOLDER%/Scripts/AR6200.baf~
+EXTEND_TOP ~AR2600.bcs~ ~%MOD_FOLDER%/Scripts/AR2600.baf~
+EXTEND_TOP ~spidfgsu.bcs~ ~%MOD_FOLDER%/Scripts/spidfgsu.baf~
+
+APPEND ~STATE.IDS~ // adds custom IsValidForPartyDialogue state
+  ~0x80101FEF CD_STATE_NOTVALID~
+  UNLESS ~CD_STATE_NOTVALID~
+  
+COPY ~%MOD_FOLDER%/Portraits/PainaL.bmp~ ~override/PainaL.bmp~
+COPY ~%MOD_FOLDER%/Portraits/PainaM.bmp~ ~override/PainaM.bmp~
+COPY ~%MOD_FOLDER%/Portraits/PainaS.bmp~ ~override/PainaS.bmp~
+
+COPY ~%MOD_FOLDER%/characters/sppain.cre~ ~override~
+  SAY NAME1 ~Pai'Na~
+  SAY NAME2 ~Pai'Na~
+  WRITE_ASCII 0x248 ~C0Paina~ #8  //override script
+  WRITE_ASCII 0x280 ~C0Paina~ #32  //DV
+  WRITE_ASCII 0x2cc ~C0Paina~ #8   //pre-joining dialogue file
+  WRITE_ASCII 0X34 ~PainaS~ #8   //small portrait
+  WRITE_ASCII 0x3c ~PainaM~ #8   //medium portrait
+  SAY BIO ~PAI'NA snarls when you ask about her past, telling you that it is none of your business and that it is enough to know that her half-drow heritage has made her an outcast from any form of civilized society. As a hivemaster druid, her duty of tending to the arachnids of the land is foremost, though she has decided to travel with you for now.~
+  SAY MORALE ~I refuse to die! My children still need me.~
+  SAY HAPPY ~I'm surprised by my lack of disappointment with you.~
+  SAY UNHAPPY_ANNOYED ~How pathetic.~ [C]
+  SAY UNHAPPY_SERIOUS ~My spiders are increasingly hungry for your blood. I suggest you change your course.~
+  SAY UNHAPPY_BREAKING_POINT ~May spiders feast on your innards! I am through with your company.~
+  SAY LEADER ~I prefer to act alone, but fine.~
+  SAY TIRED ~Stop. I am weary and my spiders require feeding.~
+  SAY BORED ~There are many things we would rather do with our time.~
+  SAY BATTLE_CRY1 ~My spiders will feast on your corpse!~
+  SAY BATTLE_CRY2 ~Feel the wrath of the divine eight-legged!~
+  SAY BATTLE_CRY3 ~Die, fool!~
+  SAY BATTLE_CRY4 ~Your death shall be slow and painful!~
+  SAY BATTLE_CRY5 ~Writhe in agony!~
+  SAY DAMAGE ~Uh!~ [DRFEM105]
+  SAY DYING ~Nngh! No... my children...~
+  SAY HURT ~No! I cannot... fall!~
+  SAY AREA_FOREST ~This would be a good place to build a sanctuary.~
+  SAY AREA_CITY ~The trampling steps of these louts sicken me. No doubt many of my charges fall to their boot each day.~
+  SAY AREA_DUNGEON ~My spiders approve of this dark place.~
+  SAY AREA_DAY ~I despise the light. Let's find shelter soon.~
+  SAY AREA_NIGHT ~The night belongs to my charges.~
+  SAY SELECT_COMMON1 ~What do you want?~
+  SAY SELECT_COMMON2 ~Hmm?~
+  SAY SELECT_COMMON3 ~What?!~
+  SAY SELECT_COMMON4 ~Leave me be.~
+  SAY SELECT_COMMON5 ~State your orders.~
+  SAY SELECT_COMMON6 ~Speak quickly.~
+  SAY SELECT_ACTION1 ~Fine.~
+  SAY SELECT_ACTION2 ~As you wish.~
+  SAY SELECT_ACTION3 ~Ah.~
+  SAY SELECT_ACTION4 ~Hmm.~
+  SAY SELECT_ACTION5 ~Must I?~
+  SAY SELECT_ACTION6 ~Bah!~
+  SAY SELECT_ACTION7 ~I shall.~
+  SAY SELECT_RARE1 ~Sometimes I wonder why I ever left my peaceful sanctuary.~
+  SAY SELECT_RARE2 ~One of my spiders is currently crawling down your neck... just kidding.~
+  SAY CRITICAL_HIT ~Hah! Feel my bite!~
+  SAY CRITICAL_MISS ~I have more chances!~
+  SAY TARGET_IMMUNE ~Impossible! Immune to my bite?~
+  SAY INVENTORY_FULL ~My charges and I are overburdened. Take some of this load away from me.~
+  SAY SPELL_DISRUPTED ~Curse you!~
+  SAY SET_A_TRAP ~~ []
+  SAY HIDDEN_IN_SHADOWS ~~ []
+  SAY PICKED_POCKET ~~ []
+  WRITE_ASCII 0x248 ~C0Paina~ #8
+  WRITE_ASCII 0x2cc ~C0Paina~  #8
+  WRITE_ASCII 0x280 ~C0Paina~  #32
+  WRITE_ASCII 0X34  ~PainaM~ #8
+  WRITE_ASCII 0x3c  ~PainaL~ #8
+  WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~C0HIVE~))
+	
+COPY ~%MOD_FOLDER%/characters/C0Pai25.cre~ ~override/C0Pai25.cre~
+  SAY NAME1 ~Pai'Na~
+  SAY NAME2 ~Pai'Na~
+  WRITE_ASCII 0x248 ~C0Paina~ #8  //override script
+  WRITE_ASCII 0x280 ~C0Paina~ #32  //DV
+  WRITE_ASCII 0x2cc ~C0Paina~ #8   //pre-joining dialogue file
+  WRITE_ASCII 0X34 ~PainaS~ #8   //small portrait
+  WRITE_ASCII 0x3c ~PainaM~ #8   //medium portrait
+  SAY BIO ~PAI'NA snarls when you ask about her past, telling you that it is none of your business and that it is enough to know that her half-drow heritage has made her an outcast from any form of civilized society. As a hivemaster druid, her duty of tending to the arachnids of the land is foremost, though she has decided to travel with you for now.~
+  SAY MORALE ~I refuse to die! My children still need me.~
+  SAY HAPPY ~I'm surprised by my lack of disappointment with you.~
+  SAY UNHAPPY_ANNOYED ~How pathetic.~
+  SAY UNHAPPY_SERIOUS ~My spiders are increasingly hungry for your blood. I suggest you change your course.~
+  SAY UNHAPPY_BREAKING_POINT ~May spiders feast on your innards! I am through with your company.~
+  SAY LEADER ~I prefer to act alone, but fine.~
+  SAY TIRED ~Stop. I am weary and my spiders require feeding.~
+  SAY BORED ~There are many things we would rather do with our time.~
+  SAY BATTLE_CRY1 ~My spiders will feast on your corpse!~
+  SAY BATTLE_CRY2 ~Feel the wrath of the divine eight-legged!~
+  SAY BATTLE_CRY3 ~Die, fool!~
+  SAY BATTLE_CRY4 ~Your death shall be slow and painful!~
+  SAY BATTLE_CRY5 ~Writhe in agony!~
+  SAY DAMAGE ~Uh!~ [DRFEM105]
+  SAY DYING ~Nngh! No... my children...~
+  SAY HURT ~No! I cannot... fall!~
+  SAY AREA_FOREST ~This would be a good place to build a sanctuary.~
+  SAY AREA_CITY ~The trampling steps of these louts sicken me. No doubt many of my charges fall to their boot each day.~
+  SAY AREA_DUNGEON ~My spiders approve of this dark place.~
+  SAY AREA_DAY ~I despise the light. Let's find shelter soon.~
+  SAY AREA_NIGHT ~The night belongs to my charges.~
+  SAY SELECT_COMMON1 ~What do you want?~
+  SAY SELECT_COMMON2 ~Hmm?~
+  SAY SELECT_COMMON3 ~What?!~
+  SAY SELECT_COMMON4 ~Leave me be.~
+  SAY SELECT_COMMON5 ~State your orders.~
+  SAY SELECT_COMMON6 ~Speak quickly.~
+  SAY SELECT_ACTION1 ~Fine.~
+  SAY SELECT_ACTION2 ~As you wish.~
+  SAY SELECT_ACTION3 ~Ah.~
+  SAY SELECT_ACTION4 ~Hmm.~
+  SAY SELECT_ACTION5 ~Must I?~
+  SAY SELECT_ACTION6 ~Bah!~
+  SAY SELECT_ACTION7 ~I shall.~
+  SAY SELECT_RARE1 ~Sometimes I wonder why I ever left my peaceful sanctuary.~
+  SAY SELECT_RARE2 ~One of my spiders is currently crawling down your neck... just kidding.~
+  SAY CRITICAL_HIT ~Hah! Feel my bite!~
+  SAY CRITICAL_MISS ~I have more chances!~
+  SAY TARGET_IMMUNE ~Impossible! Immune to my bite?~
+  SAY INVENTORY_FULL ~My charges and I are overburdened. Take some of this load away from me.~
+  SAY SPELL_DISRUPTED ~Curse you!~
+  SAY SET_A_TRAP ~~ []
+  SAY HIDDEN_IN_SHADOWS ~~ []
+  SAY PICKED_POCKET ~~ []
+  WRITE_ASCII 0x248 ~C0Pai25~ #8
+  WRITE_ASCII 0x2cc ~C0Pai25~  #8
+  WRITE_ASCII 0x280 ~C0Paina~  #32
+  WRITE_ASCII 0X34  ~PainaM~ #8
+  WRITE_ASCII 0x3c  ~PainaL~ #8
+  WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~C0HIVE~))
+
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Dialogue/BC0Paina.d~ 
+	~%MOD_FOLDER%/Dialogue/C0Paina.d~ 
+	~%MOD_FOLDER%/Dialogue/C0PaiEE.d~ 
+	~%MOD_FOLDER%/Dialogue/C0PainaJ.d~
+	~%MOD_FOLDER%/Dialogue/C0PainaP.d~
+	~%MOD_FOLDER%/Dialogue/BC0Pai25.d~ 
+	~%MOD_FOLDER%/Dialogue/C0Pai25.d~ 
+	~%MOD_FOLDER%/Dialogue/C0Pai25J.d~
+	~%MOD_FOLDER%/Dialogue/C0Pai25P.d~
+	~%MOD_FOLDER%/Dialogue/C0PWitch.d~
+	~%MOD_FOLDER%/Scripts/C0Paina.baf~
+	~%MOD_FOLDER%/Scripts/C0Pai25.baf~
+	~%MOD_FOLDER%/Scripts/C0PWitch.baf~
+	~%MOD_FOLDER%/Scripts/C0PWitCS.baf~
+	
+APPEND ~pdialog.2da~
+~C0Paina        C0PainaP             C0PainaJ            C0PainaD~
+UNLESS ~C0Paina~
+UNLESS ~25POST~
+
+APPEND ~pdialog.2da~
+~C0Paina        C0PainaP             C0PainaJ            C0PainaD             C0Pai25P             C0Pai25J             C0Pai25D       C0Pai25S~
+UNLESS ~C0Paina~
+IF ~25POST~
+
+APPEND ~interdia.2da~
+~C0Paina       BC0Paina~
+UNLESS ~C0Paina~
+UNLESS ~25FILE~
+
+APPEND ~interdia.2da~
+~C0Paina       BC0Paina       BC0Pai25~
+UNLESS ~C0Paina~
+IF ~25FILE~
+
+COPY ~%MOD_FOLDER%/Epilogue/C0Paizz.2da~ ~override/C0Pai01.2da~
+REPLACE ~99999~ ~After completing her journey with <CHARNAME>, Pai'Na returned to her sanctuary in Athkatla and discovered, to her horror, its destruction by the vermin extermination crew of Athkatla. Enraged by the sight of her former home burned down, the half-drow swore revenge against the civilized folk of the city, and soon rumors of many underground workers disappearing in the depths of the sewers spread throughout the city. Though the government initially dismissed such tales, the increasing dangers of the sewers and tombs forced them into action. Soldiers were sent down to the sewers of Athkatla only to discover that the entire underground system was taken over by spiders, webs and cocoons entangling the pipes and walls wherever they looked. As they cut through the webs in their way, a swarm of massive black spiders emerged from the darkness, and it is said that all of Athkatla heard the anguished screams from below. For many years to come, the underground of Athkatla became an uninhabitable home for arachnids where any man who trespassed never returned.~
+
+COPY ~%MOD_FOLDER%/Epilogue/C0Paizz.2da~ ~override/C0Pai02.2da~
+REPLACE ~99999~ ~After completing her journey with <CHARNAME>, Pai'Na returned to her sanctuary in Athkatla and discovered, to her horror, its destruction by the vermin extermination crew of Athkatla. Though enraged by the sight of her former home burned down, she chose to rebuild rather than seek revenge, using her great power to create a far better shelter for her spiders that would protect them from danger before leaving Athkatla entirely. She returned to her former home in the Forest of Tethir, and although the forest witch that fostered her was long gone, she built a home for herself and her arachnid family within a magical glade. Her experiences with <CHARNAME> had given her greater wisdom, and she chose to become a guardian of not only her own charges, but all creatures that called the forest home. Pai'Na eventually discovered during her research into hivemaster rituals that the potion she had drunk to gain greater power had shortened her lifespan greatly as a consequence despite her success, but she accepted her impending death without fear, finding peace with the knowledge that she would have a few more years to live in peace. She spent the remaining years of her life in quiet contemplation.~
+
+COPY ~%MOD_FOLDER%/Epilogue/C0Paizz.2da~ ~override/C0Pai03.2da~
+REPLACE ~99999~ ~After completing her journey with <CHARNAME>, Pai'Na returned to her sanctuary in Athkatla and discovered, to her horror, its destruction by the vermin extermination crew of Athkatla. Though enraged by the sight of her former home burned down, she chose to rebuild rather than seek revenge, using her great power to create a far better shelter for her spiders that would protect them from danger before leaving Athkatla entirely. She returned to her former home in the Forest of Tethir, and although the forest witch that fostered her was long gone, she built a home for herself and her arachnid family within a magical glade. Her experiences with <CHARNAME> had given her greater wisdom, and she chose to become a guardian of not only her own charges, but all creatures that called the forest home. Pai'Na eventually discovered during her research into hivemaster rituals that the potion which killed her foster mother would have shortened her lifespan greatly even had she succeeded, giving her a moment of pause as she realized that <CHARNAME> had saved her from an early death. She chose to make the best of the many years that were ahead of her, creating a sanctuary where her wild friends could live in safety and harmony.~
+
+COPY ~%MOD_FOLDER%/spells/C0SPIDER.spl~ ~override~
+SAY NAME1 ~Spiderling Swarm~
+SAY NAME2 ~Spiderling Swarm~
+
+COPY ~%MOD_FOLDER%/items/c0pring.itm~ ~override/c0pring.itm~
+SAY NAME1 ~Widow's Kiss~
+SAY NAME2 ~Widow's Kiss~
+SAY DESC ~This obsidian ring is quite large and embedded with a large spider-shaped gemstone. It is Pai'Na's most (and only) treasured possession and she refuses to even remove it.
+
+STATISTICS:
+
+Combat abilities:
+- Once per day, may summon a swarm of 12 spiders under Pai'Na's control. The spiders are weak but have a deadly poison and can be extremely dangerous in a group.
+
+Equipped abilities:
+- Can memorize one extra divine spell of each level~
+SAY 0x226 ~PAI'NA~
+
+COPY ~%MOD_FOLDER%/items/c0pkitt.itm~ ~override/c0pkitt.itm~
+SAY NAME1 ~Kitthix Figurine~
+SAY NAME2 ~Kitthix Figurine~
+SAY DESC ~This black spider figurine fits in the palm of your hand. When the command word is spoken, the figurine comes to life as a semi-intelligent spider called Kitthix. The huge spider will obey its master's commands for the duration of the spell or until slain. After eight hours, regardless of whether the spider lived or died, the figurine returns. It takes a day to recharge the figurine.
+
+Pai'Na has enhanced the power of Kitthix with hivemaster magic. The figurine now has a blood-red tint, as does the spider itself.
+
+STATISTICS:
+
+Charge abilities:
+- Summon Kitthix once per day
+  Range: 20 ft.
+  Duration: 8 hours
+  The spider can phase during combat. It can also use its Web Tangle ability, which sprays a stream of webbing at one target. If the target fails its Save vs. Spell at -2, it will be held by the webbing for 2 rounds. Kitthix's melee attack inflicts 1d10 damage (piercing), occurs 3/2 times per round, and is poisonous (Save vs. Poison at +1 negates). Additionally, Kitthix regenerates for 1 hp/round and may cast Horror and Vampiric Touch twice per summoning.
+
+Weight: 0~
+
+COPY ~%MOD_FOLDER%/items/c0ppotn.itm~ ~override/c0ppotn.itm~
+SAY NAME1 ~Bebilith Extract~
+SAY NAME2 ~Bebilith Extract~
+SAY DESC ~This murky potion is a deadly mixture composed primarily of the venom of a bebilith, a demonic spider. The magic used in its creation was meant to grant its drinker power... supposing that they survive the process. It was created by the spider witch for Pai'Na's final test, but was taken away from her out of concern for her life. She may attempt to take the test now... though the danger is likely severe, and she will either gain massive power or die an agonizing death.
+
+STATISTICS:
+
+Grants immense druidic power to the imbiber, albeit at a massive cost to their health. There is a chance that the imbiber will die permanently.
+Duration: Permanent
+
+Weight: 1~
+SAY 0xD6 ~PAI'NA~
+
+OUTER_SET strref = RESOLVE_STR_REF (~Pai'Na snarls furiously and pulls her hand away when you attempt to examine her ring.~ [GAM_47])
+APPEND item_use.2da ~c0pring c0paina %strref% 1~
+
+// Creatures
+
+COPY_EXISTING ~rumar01.cre~ ~override/c0pwitch.cre~
+  SAY NAME1 ~Black Spider~
+  SAY NAME2 ~Black Spider~
+  WRITE_EVALUATED_ASCII DIALOG          ~c0pwitch~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~c0pwitch~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~c0pwitch~ #8
+  WRITE_EVALUATED_ASCII SCRIPT_CLASS  ~c0pwitch~ #8
+  WRITE_EVALUATED_ASCII SCRIPT_DEFAULT  ~c0pwitch~ #8
+  WRITE_BYTE 0x27b 34 // True Neutral
+  REMOVE_CRE_ITEM ~clck10~
+  REMOVE_CRE_ITEM ~wand07~
+  ADD_CRE_ITEM ~c0ppotn~ #0 #0 #0 ~NONE~ ~qitem1~
+  ADD_CRE_ITEM ~c0phive3~ #0 #0 #0 ~NONE~ ~weapon1~
+  
+COPY_EXISTING ~spidfgsu.cre~ ~override/spidfgsu.cre~
+  WRITE_EVALUATED_ASCII DIALOG          ~spidfgsu~ #8 
+  
+// UB compatibility
+
+ACTION_IF FILE_EXISTS_IN_GAME ~u!spbane.itm~ AND FILE_EXISTS_IN_GAME ~bc0paina.dlg~
+THEN BEGIN
+  PRINT ~Adding compatibility for Unfinished Business~
+COMPILE ~%MOD_FOLDER%/dialogue/crossmod/ub.d~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~BC0SIRE2.dlg~ AND FILE_EXISTS_IN_GAME ~bc0paina.dlg~
+THEN BEGIN
+  PRINT ~Adding crossmod between Pai'Na and Sirene~
+COMPILE ~%MOD_FOLDER%/dialogue/crossmod/sirene.d~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~L0WillB.dlg~ AND FILE_EXISTS_IN_GAME ~bc0paina.dlg~
+THEN BEGIN
+  PRINT ~Adding crossmod between Pai'Na and Will-o'-the-Wisps~
+COMPILE ~%MOD_FOLDER%/dialogue/crossmod/will.d~
+END
+
+//Fate Spirit
+ACTION_IF GAME_IS ~eet~ BEGIN
+  INCLUDE ~EET/other/EET_functions.tph~
+  LAF ~EET_NPC_TRANSITION~
+    INT_VAR
+      type = 2
+    STR_VAR
+      dv = "C0Paina"
+      override_SoA = "C0PAINA"
+      override_ToB = "C0PAI25"
+      dialog_ToB = "C0PAI25"
+      //traFile = EVAL "%MOD_FOLDER%/translations/%LANGUAGE%/paina.tra"
+      //string = "@1"
+      string = "Bring me Pai'Na, the half-drow hivemaster."
+      stringPosDV = "Quayle"
+  END
+END ELSE BEGIN
+  COMPILE ~%MOD_FOLDER%/Dialogue/FATESP.d~
+END

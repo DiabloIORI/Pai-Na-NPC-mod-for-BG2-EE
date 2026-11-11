@@ -21,7 +21,11 @@ LANGUAGE ~English~
          ~English~
          ~%MOD_FOLDER%/translations/english/paina.tra~
 
-BEGIN ~Pai'Na NPC for BG2:EE~
+LANGUAGE ~Schinese~
+         ~简体中文~
+         ~%MOD_FOLDER%/translations/schinese/paina.tra~
+
+BEGIN ~派娜 NPC 模组（BG2:EE）~
 
 COPY ~%MOD_FOLDER%/audio~ ~override~
 COPY ~%MOD_FOLDER%/items~ ~override~
@@ -57,55 +61,55 @@ COPY ~%MOD_FOLDER%/Portraits/PainaM.bmp~ ~override/PainaM.bmp~
 COPY ~%MOD_FOLDER%/Portraits/PainaS.bmp~ ~override/PainaS.bmp~
 
 COPY ~%MOD_FOLDER%/characters/sppain.cre~ ~override~
-  SAY NAME1 ~Pai'Na~
-  SAY NAME2 ~Pai'Na~
+  SAY NAME1 ~派娜~
+  SAY NAME2 ~派娜~
   WRITE_ASCII 0x248 ~C0Paina~ #8  //override script
   WRITE_ASCII 0x280 ~C0Paina~ #32  //DV
   WRITE_ASCII 0x2cc ~C0Paina~ #8   //pre-joining dialogue file
   WRITE_ASCII 0X34 ~PainaS~ #8   //small portrait
   WRITE_ASCII 0x3c ~PainaM~ #8   //medium portrait
-  SAY BIO ~PAI'NA snarls when you ask about her past, telling you that it is none of your business and that it is enough to know that her half-drow heritage has made her an outcast from any form of civilized society. As a hivemaster druid, her duty of tending to the arachnids of the land is foremost, though she has decided to travel with you for now.~
-  SAY MORALE ~I refuse to die! My children still need me.~
-  SAY HAPPY ~I'm surprised by my lack of disappointment with you.~
-  SAY UNHAPPY_ANNOYED ~How pathetic.~ [C]
-  SAY UNHAPPY_SERIOUS ~My spiders are increasingly hungry for your blood. I suggest you change your course.~
-  SAY UNHAPPY_BREAKING_POINT ~May spiders feast on your innards! I am through with your company.~
-  SAY LEADER ~I prefer to act alone, but fine.~
-  SAY TIRED ~Stop. I am weary and my spiders require feeding.~
-  SAY BORED ~There are many things we would rather do with our time.~
-  SAY BATTLE_CRY1 ~My spiders will feast on your corpse!~
-  SAY BATTLE_CRY2 ~Feel the wrath of the divine eight-legged!~
-  SAY BATTLE_CRY3 ~Die, fool!~
-  SAY BATTLE_CRY4 ~Your death shall be slow and painful!~
-  SAY BATTLE_CRY5 ~Writhe in agony!~
-  SAY DAMAGE ~Uh!~ [DRFEM105]
-  SAY DYING ~Nngh! No... my children...~
-  SAY HURT ~No! I cannot... fall!~
-  SAY AREA_FOREST ~This would be a good place to build a sanctuary.~
-  SAY AREA_CITY ~The trampling steps of these louts sicken me. No doubt many of my charges fall to their boot each day.~
-  SAY AREA_DUNGEON ~My spiders approve of this dark place.~
-  SAY AREA_DAY ~I despise the light. Let's find shelter soon.~
-  SAY AREA_NIGHT ~The night belongs to my charges.~
-  SAY SELECT_COMMON1 ~What do you want?~
-  SAY SELECT_COMMON2 ~Hmm?~
-  SAY SELECT_COMMON3 ~What?!~
-  SAY SELECT_COMMON4 ~Leave me be.~
-  SAY SELECT_COMMON5 ~State your orders.~
-  SAY SELECT_COMMON6 ~Speak quickly.~
-  SAY SELECT_ACTION1 ~Fine.~
-  SAY SELECT_ACTION2 ~As you wish.~
-  SAY SELECT_ACTION3 ~Ah.~
-  SAY SELECT_ACTION4 ~Hmm.~
-  SAY SELECT_ACTION5 ~Must I?~
-  SAY SELECT_ACTION6 ~Bah!~
-  SAY SELECT_ACTION7 ~I shall.~
-  SAY SELECT_RARE1 ~Sometimes I wonder why I ever left my peaceful sanctuary.~
-  SAY SELECT_RARE2 ~One of my spiders is currently crawling down your neck... just kidding.~
-  SAY CRITICAL_HIT ~Hah! Feel my bite!~
-  SAY CRITICAL_MISS ~I have more chances!~
-  SAY TARGET_IMMUNE ~Impossible! Immune to my bite?~
-  SAY INVENTORY_FULL ~My charges and I are overburdened. Take some of this load away from me.~
-  SAY SPELL_DISRUPTED ~Curse you!~
+  SAY BIO ~你一问派娜的过去，她便低吼，说这不关你的事；你只需知道，半卓尔的出身让她被任何一种文明社会放逐。身为群巢大师德鲁伊，照料此地的蛛形类是她首要的职责，不过眼下她已决定与你同行一段。~
+  SAY MORALE ~我拒绝死！我的孩儿们还需要我。~
+  SAY HAPPY ~我对你竟不怎么失望，连我自己都意外。~
+  SAY UNHAPPY_ANNOYED ~真可悲。~ [C]
+  SAY UNHAPPY_SERIOUS ~我的蜘蛛越来越渴你的血。我劝你改改路数。~
+  SAY UNHAPPY_BREAKING_POINT ~愿蜘蛛饱食你的内脏！我跟你到此为止。~
+  SAY LEADER ~我宁愿单独行动，不过也罢。~
+  SAY TIRED ~停下。我乏了，我的蜘蛛要进食。~
+  SAY BORED ~有的是别的事更值得我们把时间花上。~
+  SAY BATTLE_CRY1 ~我的蜘蛛会饱食你的尸体！~
+  SAY BATTLE_CRY2 ~尝尝神圣八足的怒火！~
+  SAY BATTLE_CRY3 ~死吧，蠢货！~
+  SAY BATTLE_CRY4 ~你的死会又慢又痛！~
+  SAY BATTLE_CRY5 ~在剧痛里扭吧！~
+  SAY DAMAGE ~呃！~ [DRFEM105]
+  SAY DYING ~呃啊！不……我的孩儿们……~
+  SAY HURT ~不！我不能……倒下！~
+  SAY AREA_FOREST ~这地方适合建一座圣所。~
+  SAY AREA_CITY ~这些粗人踩踏的脚步声让我恶心。毫无疑问，每天都有我许多孩儿死在他们的靴下。~
+  SAY AREA_DUNGEON ~我的蜘蛛喜欢这黑暗的地方。~
+  SAY AREA_DAY ~我厌恶光。快点找个遮蔽处。~
+  SAY AREA_NIGHT ~夜属于我的孩儿们。~
+  SAY SELECT_COMMON1 ~你要什么？~
+  SAY SELECT_COMMON2 ~嗯？~
+  SAY SELECT_COMMON3 ~什么？！~
+  SAY SELECT_COMMON4 ~别烦我。~
+  SAY SELECT_COMMON5 ~下命令吧。~
+  SAY SELECT_COMMON6 ~快说。~
+  SAY SELECT_ACTION1 ~好。~
+  SAY SELECT_ACTION2 ~如你所愿。~
+  SAY SELECT_ACTION3 ~啊。~
+  SAY SELECT_ACTION4 ~嗯。~
+  SAY SELECT_ACTION5 ~非得我去？~
+  SAY SELECT_ACTION6 ~呸！~
+  SAY SELECT_ACTION7 ~我这就去。~
+  SAY SELECT_RARE1 ~有时我想，我当初干嘛离开我那安宁的圣所。~
+  SAY SELECT_RARE2 ~我有一只蜘蛛正顺着你的脖子往下爬……开玩笑的。~
+  SAY CRITICAL_HIT ~哈！尝尝我的咬！~
+  SAY CRITICAL_MISS ~我还有机会！~
+  SAY TARGET_IMMUNE ~不可能！对我的咬免疫？~
+  SAY INVENTORY_FULL ~我和我的孩儿们超重了。把这担子拿走些。~
+  SAY SPELL_DISRUPTED ~该死的！~
   SAY SET_A_TRAP ~~ []
   SAY HIDDEN_IN_SHADOWS ~~ []
   SAY PICKED_POCKET ~~ []
@@ -117,55 +121,55 @@ COPY ~%MOD_FOLDER%/characters/sppain.cre~ ~override~
   WRITE_SHORT 0x246 (IDS_OF_SYMBOL (~kit~ ~C0HIVE~))
 	
 COPY ~%MOD_FOLDER%/characters/C0Pai25.cre~ ~override/C0Pai25.cre~
-  SAY NAME1 ~Pai'Na~
-  SAY NAME2 ~Pai'Na~
+  SAY NAME1 ~派娜~
+  SAY NAME2 ~派娜~
   WRITE_ASCII 0x248 ~C0Paina~ #8  //override script
   WRITE_ASCII 0x280 ~C0Paina~ #32  //DV
   WRITE_ASCII 0x2cc ~C0Paina~ #8   //pre-joining dialogue file
   WRITE_ASCII 0X34 ~PainaS~ #8   //small portrait
   WRITE_ASCII 0x3c ~PainaM~ #8   //medium portrait
-  SAY BIO ~PAI'NA snarls when you ask about her past, telling you that it is none of your business and that it is enough to know that her half-drow heritage has made her an outcast from any form of civilized society. As a hivemaster druid, her duty of tending to the arachnids of the land is foremost, though she has decided to travel with you for now.~
-  SAY MORALE ~I refuse to die! My children still need me.~
-  SAY HAPPY ~I'm surprised by my lack of disappointment with you.~
-  SAY UNHAPPY_ANNOYED ~How pathetic.~
-  SAY UNHAPPY_SERIOUS ~My spiders are increasingly hungry for your blood. I suggest you change your course.~
-  SAY UNHAPPY_BREAKING_POINT ~May spiders feast on your innards! I am through with your company.~
-  SAY LEADER ~I prefer to act alone, but fine.~
-  SAY TIRED ~Stop. I am weary and my spiders require feeding.~
-  SAY BORED ~There are many things we would rather do with our time.~
-  SAY BATTLE_CRY1 ~My spiders will feast on your corpse!~
-  SAY BATTLE_CRY2 ~Feel the wrath of the divine eight-legged!~
-  SAY BATTLE_CRY3 ~Die, fool!~
-  SAY BATTLE_CRY4 ~Your death shall be slow and painful!~
-  SAY BATTLE_CRY5 ~Writhe in agony!~
-  SAY DAMAGE ~Uh!~ [DRFEM105]
-  SAY DYING ~Nngh! No... my children...~
-  SAY HURT ~No! I cannot... fall!~
-  SAY AREA_FOREST ~This would be a good place to build a sanctuary.~
-  SAY AREA_CITY ~The trampling steps of these louts sicken me. No doubt many of my charges fall to their boot each day.~
-  SAY AREA_DUNGEON ~My spiders approve of this dark place.~
-  SAY AREA_DAY ~I despise the light. Let's find shelter soon.~
-  SAY AREA_NIGHT ~The night belongs to my charges.~
-  SAY SELECT_COMMON1 ~What do you want?~
-  SAY SELECT_COMMON2 ~Hmm?~
-  SAY SELECT_COMMON3 ~What?!~
-  SAY SELECT_COMMON4 ~Leave me be.~
-  SAY SELECT_COMMON5 ~State your orders.~
-  SAY SELECT_COMMON6 ~Speak quickly.~
-  SAY SELECT_ACTION1 ~Fine.~
-  SAY SELECT_ACTION2 ~As you wish.~
-  SAY SELECT_ACTION3 ~Ah.~
-  SAY SELECT_ACTION4 ~Hmm.~
-  SAY SELECT_ACTION5 ~Must I?~
-  SAY SELECT_ACTION6 ~Bah!~
-  SAY SELECT_ACTION7 ~I shall.~
-  SAY SELECT_RARE1 ~Sometimes I wonder why I ever left my peaceful sanctuary.~
-  SAY SELECT_RARE2 ~One of my spiders is currently crawling down your neck... just kidding.~
-  SAY CRITICAL_HIT ~Hah! Feel my bite!~
-  SAY CRITICAL_MISS ~I have more chances!~
-  SAY TARGET_IMMUNE ~Impossible! Immune to my bite?~
-  SAY INVENTORY_FULL ~My charges and I are overburdened. Take some of this load away from me.~
-  SAY SPELL_DISRUPTED ~Curse you!~
+  SAY BIO ~你一问派娜的过去，她便低吼，说这不关你的事；你只需知道，半卓尔的出身让她被任何一种文明社会放逐。身为群巢大师德鲁伊，照料此地的蛛形类是她首要的职责，不过眼下她已决定与你同行一段。~
+  SAY MORALE ~我拒绝死！我的孩儿们还需要我。~
+  SAY HAPPY ~我对你竟不怎么失望，连我自己都意外。~
+  SAY UNHAPPY_ANNOYED ~真可悲。~
+  SAY UNHAPPY_SERIOUS ~我的蜘蛛越来越渴你的血。我劝你改改路数。~
+  SAY UNHAPPY_BREAKING_POINT ~愿蜘蛛饱食你的内脏！我跟你到此为止。~
+  SAY LEADER ~我宁愿单独行动，不过也罢。~
+  SAY TIRED ~停下。我乏了，我的蜘蛛要进食。~
+  SAY BORED ~有的是别的事更值得我们把时间花上。~
+  SAY BATTLE_CRY1 ~我的蜘蛛会饱食你的尸体！~
+  SAY BATTLE_CRY2 ~尝尝神圣八足的怒火！~
+  SAY BATTLE_CRY3 ~死吧，蠢货！~
+  SAY BATTLE_CRY4 ~你的死会又慢又痛！~
+  SAY BATTLE_CRY5 ~在剧痛里扭吧！~
+  SAY DAMAGE ~呃！~ [DRFEM105]
+  SAY DYING ~呃啊！不……我的孩儿们……~
+  SAY HURT ~不！我不能……倒下！~
+  SAY AREA_FOREST ~这地方适合建一座圣所。~
+  SAY AREA_CITY ~这些粗人踩踏的脚步声让我恶心。毫无疑问，每天都有我许多孩儿死在他们的靴下。~
+  SAY AREA_DUNGEON ~我的蜘蛛喜欢这黑暗的地方。~
+  SAY AREA_DAY ~我厌恶光。快点找个遮蔽处。~
+  SAY AREA_NIGHT ~夜属于我的孩儿们。~
+  SAY SELECT_COMMON1 ~你要什么？~
+  SAY SELECT_COMMON2 ~嗯？~
+  SAY SELECT_COMMON3 ~什么？！~
+  SAY SELECT_COMMON4 ~别烦我。~
+  SAY SELECT_COMMON5 ~下命令吧。~
+  SAY SELECT_COMMON6 ~快说。~
+  SAY SELECT_ACTION1 ~好。~
+  SAY SELECT_ACTION2 ~如你所愿。~
+  SAY SELECT_ACTION3 ~啊。~
+  SAY SELECT_ACTION4 ~嗯。~
+  SAY SELECT_ACTION5 ~非得我去？~
+  SAY SELECT_ACTION6 ~呸！~
+  SAY SELECT_ACTION7 ~我这就去。~
+  SAY SELECT_RARE1 ~有时我想，我当初干嘛离开我那安宁的圣所。~
+  SAY SELECT_RARE2 ~我有一只蜘蛛正顺着你的脖子往下爬……开玩笑的。~
+  SAY CRITICAL_HIT ~哈！尝尝我的咬！~
+  SAY CRITICAL_MISS ~我还有机会！~
+  SAY TARGET_IMMUNE ~不可能！对我的咬免疫？~
+  SAY INVENTORY_FULL ~我和我的孩儿们超重了。把这担子拿走些。~
+  SAY SPELL_DISRUPTED ~该死的！~
   SAY SET_A_TRAP ~~ []
   SAY HIDDEN_IN_SHADOWS ~~ []
   SAY PICKED_POCKET ~~ []
@@ -212,70 +216,70 @@ UNLESS ~C0Paina~
 IF ~25FILE~
 
 COPY ~%MOD_FOLDER%/Epilogue/C0Paizz.2da~ ~override/C0Pai01.2da~
-REPLACE ~99999~ ~After completing her journey with <CHARNAME>, Pai'Na returned to her sanctuary in Athkatla and discovered, to her horror, its destruction by the vermin extermination crew of Athkatla. Enraged by the sight of her former home burned down, the half-drow swore revenge against the civilized folk of the city, and soon rumors of many underground workers disappearing in the depths of the sewers spread throughout the city. Though the government initially dismissed such tales, the increasing dangers of the sewers and tombs forced them into action. Soldiers were sent down to the sewers of Athkatla only to discover that the entire underground system was taken over by spiders, webs and cocoons entangling the pipes and walls wherever they looked. As they cut through the webs in their way, a swarm of massive black spiders emerged from the darkness, and it is said that all of Athkatla heard the anguished screams from below. For many years to come, the underground of Athkatla became an uninhabitable home for arachnids where any man who trespassed never returned.~
+REPLACE ~99999~ ~与<CHARNAME>同行结束之后，派娜回到她在阿斯卡特拉的圣所，惊恐地发现它已被阿斯卡特拉的灭害队毁去。眼见旧日家园被烧成灰，这个半卓尔怒火中烧，向城里的文明人立誓复仇；不久，城里便传开许多地下工人于下水道深处失踪的流言。当局起初不以为意，可下水道与墓穴日益危险，逼得他们不得不出手。士兵被派下阿斯卡特拉的下水道，却发现整片地下系统已被蜘蛛占据，管道与墙壁处处缠着蛛网与茧。他们一路破网而行，一群巨大的黑蜘蛛从黑暗中涌出；据说全阿斯卡特拉都听见了地底传来的凄厉惨叫。此后许多年，阿斯卡特拉的地下成了蛛形类不可居的家园，凡擅入者再未归来。~
 
 COPY ~%MOD_FOLDER%/Epilogue/C0Paizz.2da~ ~override/C0Pai02.2da~
-REPLACE ~99999~ ~After completing her journey with <CHARNAME>, Pai'Na returned to her sanctuary in Athkatla and discovered, to her horror, its destruction by the vermin extermination crew of Athkatla. Though enraged by the sight of her former home burned down, she chose to rebuild rather than seek revenge, using her great power to create a far better shelter for her spiders that would protect them from danger before leaving Athkatla entirely. She returned to her former home in the Forest of Tethir, and although the forest witch that fostered her was long gone, she built a home for herself and her arachnid family within a magical glade. Her experiences with <CHARNAME> had given her greater wisdom, and she chose to become a guardian of not only her own charges, but all creatures that called the forest home. Pai'Na eventually discovered during her research into hivemaster rituals that the potion she had drunk to gain greater power had shortened her lifespan greatly as a consequence despite her success, but she accepted her impending death without fear, finding peace with the knowledge that she would have a few more years to live in peace. She spent the remaining years of her life in quiet contemplation.~
+REPLACE ~99999~ ~与<CHARNAME>同行结束之后，派娜回到她在阿斯卡特拉的圣所，惊恐地发现它已被阿斯卡特拉的灭害队毁去。眼见旧日家园被烧成灰，她虽怒火中烧，却选择重建而非复仇：她以强大的力量为蜘蛛造了一处远更妥善的居所，使它们免于危险，随后彻底离开阿斯卡特拉。她回到泰希尔森林的旧居；虽养育她的森林女巫早已不在，她仍在一处魔法林间空地为自身与蛛族建起了家。与<CHARNAME>的经历给了她更大的智慧，她选择不只守护自己的孩儿，也守护一切以森林为家的生灵。后来派娜在研究群巢仪轨时发现，她为求更大力量而饮下的那瓶药水虽让她成功，却也大大缩短了她的寿命；她毫不畏惧地接受了将临之死，想到还能有几年安宁日子，便觉心安。她以静思度过余生。~
 
 COPY ~%MOD_FOLDER%/Epilogue/C0Paizz.2da~ ~override/C0Pai03.2da~
-REPLACE ~99999~ ~After completing her journey with <CHARNAME>, Pai'Na returned to her sanctuary in Athkatla and discovered, to her horror, its destruction by the vermin extermination crew of Athkatla. Though enraged by the sight of her former home burned down, she chose to rebuild rather than seek revenge, using her great power to create a far better shelter for her spiders that would protect them from danger before leaving Athkatla entirely. She returned to her former home in the Forest of Tethir, and although the forest witch that fostered her was long gone, she built a home for herself and her arachnid family within a magical glade. Her experiences with <CHARNAME> had given her greater wisdom, and she chose to become a guardian of not only her own charges, but all creatures that called the forest home. Pai'Na eventually discovered during her research into hivemaster rituals that the potion which killed her foster mother would have shortened her lifespan greatly even had she succeeded, giving her a moment of pause as she realized that <CHARNAME> had saved her from an early death. She chose to make the best of the many years that were ahead of her, creating a sanctuary where her wild friends could live in safety and harmony.~
+REPLACE ~99999~ ~与<CHARNAME>同行结束之后，派娜回到她在阿斯卡特拉的圣所，惊恐地发现它已被阿斯卡特拉的灭害队毁去。眼见旧日家园被烧成灰，她虽怒火中烧，却选择重建而非复仇：她以强大的力量为蜘蛛造了一处远更妥善的居所，使它们免于危险，随后彻底离开阿斯卡特拉。她回到泰希尔森林的旧居；虽养育她的森林女巫早已不在，她仍在一处魔法林间空地为自身与蛛族建起了家。与<CHARNAME>的经历给了她更大的智慧，她选择不只守护自己的孩儿，也守护一切以森林为家的生灵。后来派娜在研究群巢仪轨时发现，那瓶害死她养母的药水，即便她成功了，也会大大缩短她的寿命；她因此一顿，意识到是<CHARNAME>把她从早死中救了下来。她选择把眼前许多年过得最好，造了一处圣所，让她野性的朋友们安居其中，平安和睦。~
 
 COPY ~%MOD_FOLDER%/spells/C0SPIDER.spl~ ~override~
-SAY NAME1 ~Spiderling Swarm~
-SAY NAME2 ~Spiderling Swarm~
+SAY NAME1 ~幼蛛群~
+SAY NAME2 ~幼蛛群~
 
 COPY ~%MOD_FOLDER%/items/c0pring.itm~ ~override/c0pring.itm~
-SAY NAME1 ~Widow's Kiss~
-SAY NAME2 ~Widow's Kiss~
-SAY DESC ~This obsidian ring is quite large and embedded with a large spider-shaped gemstone. It is Pai'Na's most (and only) treasured possession and she refuses to even remove it.
+SAY NAME1 ~寡妇之吻~
+SAY NAME2 ~寡妇之吻~
+SAY DESC ~这枚黑曜石戒指出奇地大，嵌着一颗蜘蛛形的大宝石。它是派娜最珍视的（也是唯一的）宝物，她连摘下来都不肯。
 
-STATISTICS:
+属性：
 
-Combat abilities:
-- Once per day, may summon a swarm of 12 spiders under Pai'Na's control. The spiders are weak but have a deadly poison and can be extremely dangerous in a group.
+战斗能力：
+- 每日一次，可召唤一群由派娜控制的蜘蛛，共 12 只。这些蜘蛛孱弱，却带致命毒，成群时极为危险。
 
-Equipped abilities:
-- Can memorize one extra divine spell of each level~
-SAY 0x226 ~PAI'NA~
+装备能力：
+- 每环可多记忆一个神术~
+SAY 0x226 ~派娜~
 
 COPY ~%MOD_FOLDER%/items/c0pkitt.itm~ ~override/c0pkitt.itm~
-SAY NAME1 ~Kitthix Figurine~
-SAY NAME2 ~Kitthix Figurine~
-SAY DESC ~This black spider figurine fits in the palm of your hand. When the command word is spoken, the figurine comes to life as a semi-intelligent spider called Kitthix. The huge spider will obey its master's commands for the duration of the spell or until slain. After eight hours, regardless of whether the spider lived or died, the figurine returns. It takes a day to recharge the figurine.
+SAY NAME1 ~基帝克斯雕像~
+SAY NAME2 ~基帝克斯雕像~
+SAY DESC ~这尊黑蜘蛛雕像可握于掌心。念出命令词，雕像便化为一只名叫基帝克斯的半智蜘蛛。这只巨蛛会服从主人的命令，直到法术时效结束或被杀。八小时后，无论蜘蛛是死是活，雕像都会回来。雕像需一日充能。
 
-Pai'Na has enhanced the power of Kitthix with hivemaster magic. The figurine now has a blood-red tint, as does the spider itself.
+派娜以群巢魔法强化了基帝克斯的力量。雕像如今泛着血红，蜘蛛本身亦然。
 
-STATISTICS:
+属性：
 
-Charge abilities:
-- Summon Kitthix once per day
-  Range: 20 ft.
-  Duration: 8 hours
-  The spider can phase during combat. It can also use its Web Tangle ability, which sprays a stream of webbing at one target. If the target fails its Save vs. Spell at -2, it will be held by the webbing for 2 rounds. Kitthix's melee attack inflicts 1d10 damage (piercing), occurs 3/2 times per round, and is poisonous (Save vs. Poison at +1 negates). Additionally, Kitthix regenerates for 1 hp/round and may cast Horror and Vampiric Touch twice per summoning.
+充能能力：
+- 每日一次召唤基帝克斯
+  射程：20 尺
+  持续：8 小时
+  该蜘蛛战斗中可相位移动。它还能使用“缠网”能力，向单个目标喷出一束蛛网；目标若以 -2 不利通过法术豁免失败，将被蛛网缚住 2 轮。基帝克斯的近战攻击造成 1d10 伤害（穿刺），每轮 3/2 次，并带毒（以 +1 有利通过毒素豁免则免）。此外，基帝克斯每轮回复 1 点生命，每次召唤可施放“恐惧”与“吸血鬼之触”各两次。
 
-Weight: 0~
+重量：0~
 
 COPY ~%MOD_FOLDER%/items/c0ppotn.itm~ ~override/c0ppotn.itm~
-SAY NAME1 ~Bebilith Extract~
-SAY NAME2 ~Bebilith Extract~
-SAY DESC ~This murky potion is a deadly mixture composed primarily of the venom of a bebilith, a demonic spider. The magic used in its creation was meant to grant its drinker power... supposing that they survive the process. It was created by the spider witch for Pai'Na's final test, but was taken away from her out of concern for her life. She may attempt to take the test now... though the danger is likely severe, and she will either gain massive power or die an agonizing death.
+SAY NAME1 ~比贝利斯精华~
+SAY NAME2 ~比贝利斯精华~
+SAY DESC ~这瓶浑浊的药水是致命的混合物，主要成分是魔蛛比贝利斯的毒液。制作时所用的魔法本意是赋予饮者力量……前提是他能熬过这一过程。它是蛛之女巫为派娜的最后考验所制，却因担心她的性命而被取走。她如今可以尝试这场考验……只是危险恐怕极大，她要么得到巨大的力量，要么痛苦地死去。
 
-STATISTICS:
+属性：
 
-Grants immense druidic power to the imbiber, albeit at a massive cost to their health. There is a chance that the imbiber will die permanently.
-Duration: Permanent
+赋予饮者巨大的德鲁伊之力，代价是健康大损。饮者有永久死亡的可能。
+持续：永久
 
-Weight: 1~
-SAY 0xD6 ~PAI'NA~
+重量：1~
+SAY 0xD6 ~派娜~
 
-OUTER_SET strref = RESOLVE_STR_REF (~Pai'Na snarls furiously and pulls her hand away when you attempt to examine her ring.~ [GAM_47])
+OUTER_SET strref = RESOLVE_STR_REF (~你试图细看派娜的戒指时，她狂怒地低吼，把手抽了回去。~ [GAM_47])
 APPEND item_use.2da ~c0pring c0paina %strref% 1~
 
 // Creatures
 
 COPY_EXISTING ~rumar01.cre~ ~override/c0pwitch.cre~
-  SAY NAME1 ~Black Spider~
-  SAY NAME2 ~Black Spider~
+  SAY NAME1 ~黑蜘蛛~
+  SAY NAME2 ~黑蜘蛛~
   WRITE_EVALUATED_ASCII DIALOG          ~c0pwitch~ #8
   WRITE_EVALUATED_ASCII DEATHVAR        ~c0pwitch~ #32
   WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~c0pwitch~ #8

@@ -1,56 +1,56 @@
 BEGIN C0Pai25J
 
 EXTEND_TOP SARVOLO 9 #2
-+ ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID) !Global("C0PainaRomanceActive","GLOBAL",2)~ + ~Tell me about Pai'Na.~ + C0PainaVoloBio1
++ ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID) !Global("C0PainaRomanceActive","GLOBAL",2)~ + ~跟我说说派娜。~ + C0PainaVoloBio1
 END
 
 CHAIN SARVOLO C0PainaVoloBio1
-~Mistress of spiders, Pai'Na the hivemistress is among the most deadly of druids in the realms, with countless eight-legged brethren at her command. Those who dare invoke her wrath soon learn to fear and respect the lethality of the arachnids.~
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~Pretty words, though they mean little to me.~
+~蛛之女主，群巢女大师派娜是诸国度最致命的德鲁伊之一，麾下有无数的八足同族。胆敢触她怒火的人，很快就会学会畏惧并敬重蛛类的杀伐。~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~好听的话，可对我没什么意义。~
 EXTERN SARVOLO 9
 
 I_C_T FINSOL01 27 C0PainaSolarFriend1
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~So, your journey is about to come to an end. Choose what you desire the most, and damn those who try and convince you otherwise. It is a rare chance for destiny to be in your own hands.~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~那么，你的旅程快要结束了。挑你最想要的东西，让那些想劝你改变主意的人都见鬼去。命运握在自己手里，这样的机会难得。~
 END
 
 I_C_T AMMERC02 0 C0PainaAMMERC020
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~Oh, what a pleasant surprise. My spiders remember this one very, very well. They would like to get acquainted with his flesh.~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~哦，真是可喜的意外。我的蜘蛛对这一个记得清清楚楚。它们想跟他的血肉认识认识。~
 END 
 
 I_C_T2 BAZDRA01 5 C0PainaBAZDRA015
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~You are but a lizard to the might of my brethren, fool!~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~蠢货，在我同族之威面前，你不过是一条蜥蜴！~
 END
 
 I_C_T SARMEL01 7 C0PainaSARMEL017
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~Then you are the first. How do we know that you can be trusted?~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~那你是头一个。我们怎么知道你可信？~
 END
 
 I_C_T YAGA01 2 C0PainaYAGA012
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~Laugh while you will, brute. You will make a fine feast once you are dead!~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~畜生，你尽管笑。等你死了，会是一顿好食！~
 END
 
 I_C_T HGNYA01 1 C0PainaHGNYA011
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~This crone reminds me of the witch that raised me, though there is a strange emptiness in her eyes.~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~这老妪让我想起养我的那个女巫，只是她眼里有一种古怪的空洞。~
 END
 
 I_C_T HGNYA01 29 C0PainaHGNYA0129
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~Hmph, so her sentiment returns with her heart. I knew we should have let my spiders devour it.~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~哼，看来她的心一回来，感情也回来了。我早知道该让我的蜘蛛把它吃下去。~
 END
 
 INTERJECT SENGUA01 4 C0PainaSENGUA014
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~There are drow in the area, then? Good. I will enjoy killing them.~
-== SENGUA01 ~Wait. A half-drow?! A mongrel that must be cut down on sight!~
-== C0Pai25J ~What?~
-== SENGUA01 ~This deception be damned, you have made a mistake coming here! By Sendai's will, you shall die!~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~那么这一带有卓尔？好。杀他们我会很享受。~
+== SENGUA01 ~等等。一个半卓尔？！这种杂种见到就该砍！~
+== C0Pai25J ~什么？~
+== SENGUA01 ~管他什么伪装，你来这儿就是错了！凭珊黛的意志，你该死！~
 DO ~Enemy()
 SetGlobal("DrowRevealed","AR6100",1)
 EraseJournalEntry(67464)~
 EXIT
 
 I_C_T SENDAI 13 C0PainaSENDAI13
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~How pathetic. My spiders still crave for drow flesh.~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~真可悲。我的蜘蛛仍渴着卓尔的血肉。~
 END
 
 I_C_T BALTH 6 C0PainaBalth6
-== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~He sends us away with the tone of one sending a man to his death. What are his intentions?~
+== C0Pai25J IF ~InParty("C0Paina") InMyArea("C0Paina") !StateCheck("C0Paina",CD_STATE_NOTVALID)~ THEN ~他打发我们走的口气，像在送人去死。他打的什么主意？~
 END

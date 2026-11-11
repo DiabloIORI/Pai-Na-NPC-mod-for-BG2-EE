@@ -70,48 +70,48 @@ LAF ADD_KIT_EX
 	// Shaman = 21
     kit_class     = 11
 	
-    mixed         = RESOLVE_STR_REF(~Hivemaster~)
+    mixed         = RESOLVE_STR_REF(~群巢大师~)
 	
-    lower         = RESOLVE_STR_REF(~hivemaster~)
+    lower         = RESOLVE_STR_REF(~群巢大师~)
 	
-    help          = RESOLVE_STR_REF(~HIVEMASTER: The Hivemaster is a druid that focuses on fostering and protecting insects and arachnids, including giant versions thereof. Most commonly stylise themselves after either communal insects, such as ants or bees (hence the name), or predators like spiders, scorpions and dragonflies.
+    help          = RESOLVE_STR_REF(~群巢大师：群巢大师是专心养育并保护昆虫与蛛形类（含其巨大化的种类）的德鲁伊。他们多半仿效群居昆虫——如蚂蚁或蜜蜂（“群巢”之名即由此而来）——或蜘蛛、蝎子、蜻蜓之类的掠食者。
 
-Advantages:
-– Immunity to all poisons and the following spells: Web, Summon Insects, Insect Plague, Creeping Doom
-– Six arcane spells are added to <PRO_HISHER> repertoire, all the way up to the 6th level. These are listed below:
-  1st level: Blindness.
-  2nd level: Web.
-  3rd level: Spiderskin.
-  4th level: Spider Spawn.
-  5th level: Cloudkill.
-  6th level: Carrion Summons.
-– May use the Poison Weapon ability once per day. Gains another use at levels 7 and 14.
+优势：
+– 免疫所有毒素，以及下列法术：蛛网术、召唤昆虫、昆虫疫病、蔓延末日
+– 有六个奥术加入<PRO_HISHER>的法术库，一直可用到六环。列表如下：
+  1 环：目盲术。
+  2 环：蛛网术。
+  3 环：蛛皮术。
+  4 环：召唤蜘蛛。
+  5 环：死云术。
+  6 环：腐尸召唤。
+– 每日可使用一次“淬毒武器”能力。在第 7 级与第 14 级各多得一次使用。
 
-POISON WEAPON: Each successful hit within the next 5 rounds will inject poison into the target. Each target can only be affected once per round. The amount of poison damage depends on the character's level:
+淬毒武器：接下来 5 轮内，每次命中都会向目标注入毒。每个目标每轮只会受一次影响。毒素伤害量取决于角色等级：
 
-1st - Target suffers 1 poison damage per second for 6 seconds (Save vs. Death at +1 negates)
-5th - Target suffers 1 poison damage per second for 12 seconds (Save vs. Death negates), and also immediately suffers 2 poison damage (no save)
-9th - Target suffers 1 poison damage per second for 18 seconds (Save vs. Death at -1 negates), and also immediately suffers 4 poison damage (no save)
-13th - Target suffers 1 poison damage per second for 24 seconds (Save vs. Death at -2 negates), and also immediately suffers 6 poison damage (no save)
+1 级 - 目标每秒受 1 点毒伤害，持续 6 秒（以 +1 有利通过死亡豁免则免）
+5 级 - 目标每秒受 1 点毒伤害，持续 12 秒（通过死亡豁免则免），并立即再受 2 点毒伤害（不可豁免）
+9 级 - 目标每秒受 1 点毒伤害，持续 18 秒（以 -1 不利通过死亡豁免则免），并立即再受 4 点毒伤害（不可豁免）
+13 级 - 目标每秒受 1 点毒伤害，持续 24 秒（以 -2 不利通过死亡豁免则免），并立即再受 6 点毒伤害（不可豁免）
 
-– 7th level: May Shapeshift into the form of a small spider, a phase spider, or a sword spider once per day.
+– 第 7 级：每日一次可变形成小蜘蛛、相位蛛或剑蛛。
 
-SMALL SPIDER: The small spider is invisible upon transformation, has 10 Strength and 18 Dexterity, and strikes twice per round for 1d2 piercing damage. Targets must make a save vs. death or be poisoned for 5 damage per second for 5 rounds.
+小蜘蛛：变形时隐形，力量 10、敏捷 18，每轮攻击两次，造成 1d2 穿刺伤害。目标须通过死亡豁免，否则中毒，每秒受 5 点伤害，持续 5 轮。
 
-PHASE SPIDER: The phase spider may teleport to a targeted creature once per round, has 14 Strength and 18 Dexterity, and strikes twice per round for 1d6 piercing damage. Targets must make a save vs. death or be poisoned for 2 damage per second for 3 rounds.
+相位蛛：每轮可传送至一个指定生物；力量 14、敏捷 18，每轮攻击两次，造成 1d6 穿刺伤害。目标须通过死亡豁免，否则中毒，每秒受 2 点伤害，持续 3 轮。
 
-SWORD SPIDER: The sword spider is permanently Hasted, has 18 Strength and Dexterity, and strikes three times per round, not including Haste, for 1d10 slashing damage.
+剑蛛：永久处于加速状态；力量与敏捷 18，每轮攻击三次（不计加速），造成 1d10 挥砍伤害。
 
-– 14th level: The hivemaster may transform into a frost spider.
+– 第 14 级：群巢大师可变形为霜蛛。
 
-FROST SPIDER: The frost spider is immune to non-enchanted weapons and cold damage, has 19 Strength and 20 Dexterity, and strikes twice per round for 2d8 piercing damage and 1d10 cold damage. Targets must make a save vs. death at -2 or become slowed and lose one point of Strength for 1 turn. Enemies that damage the frost spider in melee range suffer 2d6 cold damage.
+霜蛛：免疫非附魔武器与寒冷伤害；力量 19、敏捷 20，每轮攻击两次，造成 2d8 穿刺伤害与 1d10 寒冷伤害。目标须以 -2 不利通过死亡豁免，否则被减速并在 1 回合内失去 1 点力量。在近战距离伤到霜蛛的敌人会受 2d6 寒冷伤害。
 
-Disadvantages:
-– Incurs a -3 penalty to Charisma.
-– May not wear heavier armor than leather.
-– May not shapeshift into default animal forms.~)
+劣势：
+– 魅力 -3 惩罚。
+– 不得穿着重于皮甲的衣服。
+– 不得变形为默认的动物形态。~)
 	
-    briefdesc     = RESOLVE_STR_REF(~HIVEMASTER: The Hivemaster is a druid that focuses on fostering and protecting insects and arachnids, including giant versions thereof. Most commonly stylise themselves after either communal insects, such as ants or bees (hence the name), or predators like spiders, scorpions and dragonflies.~)
+    briefdesc     = RESOLVE_STR_REF(~群巢大师：群巢大师是专心养育并保护昆虫与蛛形类（含其巨大化的种类）的德鲁伊。他们多半仿效群居昆虫——如蚂蚁或蜜蜂（“群巢”之名即由此而来）——或蜘蛛、蝎子、蜻蜓之类的掠食者。~)
 	
 	// fallen = 0
 	
@@ -212,40 +212,40 @@ PRETTY_PRINT_2DA
 END
 
 COPY ~%MOD_FOLDER%/Druid/Hivemaster/spells/C0HIVEP.spl~ ~override~
-SAY NAME1 ~Shapeshift: Spider Form~
-SAY UNIDENTIFIED_DESC ~Shapeshift: Spider Form
-This ability allows the hivemaster to shapeshift into a small spider, a phase spider or a sword spider. From 14th level, the hivemaster may shapeshift into a frost spider.
+SAY NAME1 ~变形：蜘蛛形态~
+SAY UNIDENTIFIED_DESC ~变形：蜘蛛形态
+此能力让群巢大师变形成小蜘蛛、相位蛛或剑蛛。自第 14 级起，群巢大师还可变形为霜蛛。
 
-SMALL SPIDER: The small spider is invisible upon transformation, has 10 Strength and 18 Dexterity, and strikes twice per round for 1d2 piercing damage. Targets must make a save vs. death or be poisoned for 5 damage per second for 5 rounds.
+小蜘蛛：变形时隐形，力量 10、敏捷 18，每轮攻击两次，造成 1d2 穿刺伤害。目标须通过死亡豁免，否则中毒，每秒受 5 点伤害，持续 5 轮。
 
-PHASE SPIDER: The phase spider may teleport to a targeted creature once per round, has 14 Strength and 18 Dexterity, and strikes twice per round for 1d6 piercing damage. Targets must make a save vs. death or be poisoned for 2 damage per second for 3 rounds.
+相位蛛：每轮可传送至一个指定生物；力量 14、敏捷 18，每轮攻击两次，造成 1d6 穿刺伤害。目标须通过死亡豁免，否则中毒，每秒受 2 点伤害，持续 3 轮。
 
-SWORD SPIDER: The sword spider is permanently Hasted, has 18 Strength and Dexterity, and strikes three times per round, not including Haste, for 1d10 slashing damage.
+剑蛛：永久处于加速状态；力量与敏捷 18，每轮攻击三次（不计加速），造成 1d10 挥砍伤害。
 
-14th level: FROST SPIDER: The frost spider is immune to non-enchanted weapons and cold damage, has 19 Strength and 20 Dexterity, and strikes twice per round for 2d8 piercing damage and 1d10 cold damage. Targets must make a save vs. death at -2 or become slowed and lose one point of Strength for 1 turn. Enemies that damage the frost spider in melee range suffer 2d6 cold damage.~
+14 级：霜蛛：免疫非附魔武器与寒冷伤害；力量 19、敏捷 20，每轮攻击两次，造成 2d8 穿刺伤害与 1d10 寒冷伤害。目标须以 -2 不利通过死亡豁免，否则被减速并在 1 回合内失去 1 点力量。在近战距离伤到霜蛛的敌人会受 2d6 寒冷伤害。~
 
 COPY ~%MOD_FOLDER%/Druid/Hivemaster/spells/C0HIVE1.spl~ ~override~
-SAY NAME1 ~Shapeshift: Small Spider~
+SAY NAME1 ~变形：小蜘蛛~
 
 COPY ~%MOD_FOLDER%/Druid/Hivemaster/spells/C0HIVE2.spl~ ~override~
-SAY NAME1 ~Shapeshift: Phase Spider~
+SAY NAME1 ~变形：相位蛛~
 
 COPY_EXISTING ~C0HPHASE.spl~ ~override~
-SAY NAME1 ~Dimension Door~
+SAY NAME1 ~任意门~
 
 COPY ~%MOD_FOLDER%/Druid/Hivemaster/spells/C0HIVE3.spl~ ~override~
-SAY NAME1 ~Shapeshift: Sword Spider~
+SAY NAME1 ~变形：剑蛛~
 
 COPY ~%MOD_FOLDER%/Druid/Hivemaster/spells/C0HIVE4.spl~ ~override~
-SAY NAME1 ~Shapeshift: Frost Spider~
+SAY NAME1 ~变形：霜蛛~
 
 COPY_EXISTING ~C0PHIVE4.ITM~ ~override~
 LPF ALTER_EFFECT INT_VAR match_opcode = 53 parameter1 = (IDS_OF_SYMBOL (~animate~ ~C0_ICE_SPIDER~)) END		
 
 COPY ~%MOD_FOLDER%/Druid/Hivemaster/spells/C0HIVEH1.spl~ ~override~
-SAY NAME1 ~Insect Shroud~
-SAY UNIDENTIFIED_DESC ~Insect Shroud
-With this ability, the hivemaster permanently becomes shrouded by a swarm of flying insects, almost invisible to the eye. These insects retaliate against targets who damage the hivemaster within a 10-ft. radius, dealing 1 point of damage per 2 seconds, reducing the target's Armor Class and THAC0 by 2, and inflicting 100% spell failure for 2 rounds.~
+SAY NAME1 ~昆虫帷幕~
+SAY UNIDENTIFIED_DESC ~昆虫帷幕
+有了此能力，群巢大师永久被一群飞虫笼罩，几乎不可见。10 尺半径内伤到群巢大师的目标会遭这些昆虫反击：每 2 秒受 1 点伤害，护甲等级与命中率各降低 2，并在 2 轮内承受 100% 施法失败。~
 
 ADD_PROJECTILE ~%MOD_FOLDER%/Druid/Hivemaster/spells/C0HVPRO1.PRO~
 
@@ -257,21 +257,21 @@ COPY_EXISTING ~C0HIVH1A.SPL~ OVERRIDE
 END
 
 COPY ~%MOD_FOLDER%/Druid/Hivemaster/spells/C0HIVEH2.spl~ ~override~
-SAY NAME1 ~Conjure Aranea Elder~
-SAY UNIDENTIFIED_DESC ~Conjure Aranea Elder
+SAY NAME1 ~召唤阿拉涅亚长者~
+SAY UNIDENTIFIED_DESC ~召唤阿拉涅亚长者
 
-Level: Quest
-Range: 30 ft.
-Duration: 5 turns
-Casting Time: 9
-Area of Effect: Special
-Saving Throw: None
+等级：任务
+射程：30 尺
+持续：5 回合
+施法时间：9
+效果范围：特殊
+豁免：无
 
-This spell summons a powerful ancient aranea, a shapeshifting spiderkin with incredible arcane powers. The aranea remains for 1 turn under the control of the hivemaster, and may cast spells as though a 20th level sorcerer. Their melee attacks strike as a +4 weapon, dealing 1d10 piercing and 1d6 magic damage, additionally inflicting 5 poison damage per second for 10 rounds if a Save vs. Death at -5 is failed.~
+本法术召唤一只强大的远古阿拉涅亚——一种能变形、拥有惊人奥术力量的蛛族。阿拉涅亚在群巢大师控制下留存 1 回合，可如同 20 级术士般施法。其近战攻击视同 +4 武器，造成 1d10 穿刺与 1d6 魔法伤害；若目标以 -5 不利通过死亡豁免失败，还每秒受 5 点毒伤害，持续 10 轮。~
 
 COPY ~%MOD_FOLDER%/Druid/Hivemaster/spells/C0HVARAN.cre~ ~override~
-SAY NAME1 ~Aranea Elder~
-SAY NAME2 ~Aranea Elder~
+SAY NAME1 ~阿拉涅亚长者~
+SAY NAME2 ~阿拉涅亚长者~
   WRITE_ASCII 0x280 ~C0HVARAN~  #32
     WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~C0_ARANEA~))
 
@@ -282,18 +282,18 @@ COPY_EXISTING ~spwi215.spl~ ~override/C0HVSP2.spl~
 WRITE_SHORT 0x1C 2 
 
 COPY_EXISTING ~C0HVSP3.spl~ ~override/C0HVSP3.spl~
-SAY NAME1 ~Spiderskin~
-SAY UNIDENTIFIED_DESC ~Spiderskin
-(Alteration)
+SAY NAME1 ~蛛皮术~
+SAY UNIDENTIFIED_DESC ~蛛皮术
+（变化系）
 
-Level: 3
-Range: 0
-Duration: 12 hours
-Casting Time: 1
-Area of Effect: 1 creature
-Saving Throw: None
+等级：3
+射程：0
+持续：12 小时
+施法时间：1
+效果范围：1 个生物
+豁免：无
 
-This spell grants the target a +2 bonus to Armor Class, Save vs. Death and a +30% bonus to Hide in Shadows and Move Silently. These bonuses increase by +1 and +15% at 8th, 11th and 14th level.~
+本法术使目标护甲等级与死亡豁免各得 +2 加值，潜行与无声移动各得 +30% 加值。这些加值在第 8、11、14 级各再增 +1 与 +15%。~
 
 COPY_EXISTING ~spwi423.spl~ ~override/C0HVSP4.spl~
 WRITE_SHORT 0x1C 2

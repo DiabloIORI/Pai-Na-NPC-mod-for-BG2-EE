@@ -288,7 +288,7 @@ IF
 	!Dead("C0Paina")
 THEN
 RESPONSE #100
-	DisplayStringHead(Myself,~Nngh...! Curse... my weakness...~)
+	DisplayStringHead(Myself,~呃啊……！该死……我这衰弱……~)
 	Wait(1)
 	CreateVisualEffectObject("SPFLESHS",Myself)
 	LeaveParty()

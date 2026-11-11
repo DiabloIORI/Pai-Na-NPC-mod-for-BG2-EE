@@ -4,15 +4,15 @@ See("C0Paina")
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 !StateCheck("C0Sirene",CD_STATE_NOTVALID)
 Global("C0SirenePaina1","GLOBAL",0)~ THEN BC0SIRE2 C0SirenePaina1
-~We are both outcasts in the world, Pai'Na.~
+~派娜，我们在这世上都是被逐之人。~
 DO ~SetGlobal("C0SirenePaina1","GLOBAL",1)~
-== BC0Paina ~If you think to find common ground between us, paladin, prepare to be sorely disappointed.~
-== BC0SIRE2 ~I know that you see us as opposites. But truly, I have no emnity towards you. I know that you suffer from loneliness behind your exterior.~
-== BC0Paina ~I've never felt lonely. My spiders are all the friends I need.~
-== BC0SIRE2 ~Pai'Na... I know what 'tis like to be alone. Hiding it will only bring you further suffering.~
-== BC0Paina ~Why would you care?~
-== BC0SIRE2 ~Because I am a servant of Ilmater, but moreso, because I truly wish to be your friend, Pai'Na. I see a loneliness similar to my own in your eyes, masked by your pride...~
-== BC0Paina ~Oh, shut up and leave me be! I... I don't want to listen to your drivel.~
+== BC0Paina ~圣武士，你若以为能在我们之间找到共同之处，准备好大失所望吧。~
+== BC0SIRE2 ~我知道你把我们看作对立。可我真的对你无敌意。我知道你外表之下受着孤独之苦。~
+== BC0Paina ~我从不觉得孤独。我的蜘蛛就是我所需要的全部朋友。~
+== BC0SIRE2 ~派娜……我知道孤身一人是什么滋味。藏着它只会让你更苦。~
+== BC0Paina ~你为何在意？~
+== BC0SIRE2 ~因为我是伊尔梅特的仆从，更因为我真的想成为你的朋友，派娜。我在你眼中看到一种与我相似的孤独，被你的骄傲遮住……~
+== BC0Paina ~哦，闭嘴，别烦我！我……我不想听你这套废话。~
 EXIT
 
 CHAIN
@@ -21,17 +21,17 @@ See("C0Paina")
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 !StateCheck("C0Sirene",CD_STATE_NOTVALID)
 Global("C0SirenePaina2","GLOBAL",0)~ THEN BC0SIRE2 C0SirenePaina2
-~Your stance is off.~
+~你的站姿不对。~
 DO ~SetGlobal("C0SirenePaina2","GLOBAL",1)~
-== BC0Paina ~What?~
-== BC0SIRE2 ~When you swing your staff, you risk losing balance from its weight in your stance. Lend me your staff and I will show you.~
-== BC0Paina ~I don't want your instruction.~
-== BC0SIRE2 ~I have trained a little with the staff in the past. Let me teach you.~
-== BC0Paina ~No. I do not care to be taught. I have my spiders and my magic to protect me. If I have to swing this shaft of wood in battle, then it means you have failed in your role.~
-== BC0SIRE2 ~Perhaps you are right, what shall you do if I truly fall in battle?~
-== BC0Paina ~I'll survive. I'm very good at surviving.~
-== BC0SIRE2 ~There is no need to be so stubborn. I will simply teach you some basic techniques. I only wish to aid, nothing else.~
-== BC0Paina ~I told you I don't want... (sigh) Fine. Show me how it's done.~
+== BC0Paina ~什么？~
+== BC0SIRE2 ~你挥杖时，杖的重量会让你的架势失衡。把杖借我，我示范给你看。~
+== BC0Paina ~我不要你的指教。~
+== BC0SIRE2 ~我从前练过一点杖法。让我教你。~
+== BC0Paina ~不。我没兴趣被人教。我有蜘蛛和魔法护身。我若得在战阵中抡这根木棍，那就说明你失职了。~
+== BC0SIRE2 ~也许你说得对。可我若真战死了，你怎么办？~
+== BC0Paina ~我会活下来。我很擅长活下来。~
+== BC0SIRE2 ~不必这么固执。我只教你些基本功。我只想帮忙，别无他意。~
+== BC0Paina ~我说了我不想……（叹气）好吧。示范给我看。~
 EXIT
 
 CHAIN
@@ -41,14 +41,14 @@ See("C0Paina")
 !StateCheck("C0Sirene",CD_STATE_NOTVALID)
 Global("C0SirenePaina3","GLOBAL",0)
 AreaType(FOREST)~ THEN BC0SIRE2 C0SirenePaina2
-~Look at the sun behind the trees, Pai'Na. The light is so warm and welcoming.~
+~看树后的太阳，派娜。光多温暖，多叫人安心。~
 DO ~SetGlobal("C0SirenePaina3","GLOBAL",1)~
-== BC0Paina ~Hmph.~
-== BC0SIRE2 ~Do you not appreciate the beauty of nature, Pai'Na? I thought that you would be happier away from cities.~
-== BC0Paina ~I prefer the form of arachnids. These woods are... preferable to the filth of civilization, but it is too... too bright and colorful.~
-== BC0SIRE2 ~Is it because of your drow heritage, or because of your upbringing?~
-== BC0Paina ~I don't know, and I don't care. If you value your safety and comfort, *do not* call me drow.~
-== BC0SIRE2 ~I... forgive me. I did not mean to offend... if it changes anything, Pai'Na, I know what 'tis like.~
-== BC0Paina ~...~
-== BC0Paina ~Bah. I've heard such things too much to be angered. Just don't mention it again.~
+== BC0Paina ~哼。~
+== BC0SIRE2 ~你不欣赏自然之美吗，派娜？我以为离开城市你会更快乐。~
+== BC0Paina ~我更偏爱蛛形类的形态。这林子……比文明的污秽可取，可太……太亮太艳丽了。~
+== BC0SIRE2 ~是因为你的卓尔血统，还是因为你的教养？~
+== BC0Paina ~我不知道，也不在乎。你若看重自己的安危与舒适，就*别*叫我卓尔。~
+== BC0SIRE2 ~我……请原谅。我无意冒犯……若这有用的话，派娜，我知道那是什么滋味。~
+== BC0Paina ~……~
+== BC0Paina ~呸。这种话我听得太多，已经气不起来了。只是别再提。~
 EXIT

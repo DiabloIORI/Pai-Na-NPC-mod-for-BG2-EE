@@ -1,18 +1,18 @@
 BEGIN C0PainaP
 
 IF ~Global("C0PainaKickedOut","GLOBAL",0) HappinessLT(Myself,-299)~ b1
-SAY ~I've had enough! May spiders feast upon your innards!~
+SAY ~我受够了！愿蜘蛛饱食你的内脏！~
 IF ~~ DO ~EscapeArea()~ EXIT
 END
 
 IF ~Global("C0PainaKickedOut","GLOBAL",0)~ b2
-SAY ~Are we to part ways, now?~
-++ ~No, my mistake.~ DO ~JoinParty()~ EXIT
-++ ~Yes, for now.~ + b2.1
+SAY ~我们现在要分道扬镳？~
+++ ~不，是我的错。~ DO ~JoinParty()~ EXIT
+++ ~是，暂且如此。~ + b2.1
 END
 
 IF ~~ b2.1
-SAY ~Fine. You will find me back at my sanctuary. Perhaps I will be in the mood to travel with you again.~
+SAY ~好。你回我的圣所找我吧。也许哪天我又愿意跟你同行了。~
 + ~!AreaCheck("AR0603")
 !AreaCheck("AR0410")
 !AreaCheck("AR0411")
@@ -31,7 +31,7 @@ SAY ~Fine. You will find me back at my sanctuary. Perhaps I will be in the mood 
 !AreaCheck("AR1505")
 !AreaCheck("AR1506")
 !AreaCheck("AR1507")
-!AreaCheck("AR1508")~ + ~All right. I'll meet you there.~ DO ~SetGlobal("C0PainaKickedOut","GLOBAL",1) MoveGlobal("AR0804","C0Paina",[568.420])~ EXIT 
+!AreaCheck("AR1508")~ + ~好。我在那儿见你。~ DO ~SetGlobal("C0PainaKickedOut","GLOBAL",1) MoveGlobal("AR0804","C0Paina",[568.420])~ EXIT 
 + ~!AreaCheck("AR0301")
 !AreaCheck("AR0302")
 !AreaCheck("AR0303")
@@ -45,23 +45,23 @@ SAY ~Fine. You will find me back at my sanctuary. Perhaps I will be in the mood 
 !AreaCheck("AR1102")
 !AreaCheck("AR1107")
 !AreaCheck("AR0801")
-!AreaCheck("AR0803")~ + ~You can't do that right now. Just wait for me here.~ DO ~SetGlobal("C0PainaKickedOut","GLOBAL",1)~ EXIT
+!AreaCheck("AR0803")~ + ~现在不行。就在这儿等我。~ DO ~SetGlobal("C0PainaKickedOut","GLOBAL",1)~ EXIT
 END
 
 // If you have kicked Branwen out and told her to wait right here or in the Bridge District, here's the dialogue she is going to have(remember, C0PainaKickedOut is at 1).
 
 IF ~Global("C0PainaKickedOut","GLOBAL",1)~ b3
-SAY ~Hmph, you return. Watch where you step, would you? Now, have you come for my assistance again?~
-++ ~I have. Please, join me.~ + b3.1
-++ ~Not at the moment.~ + b3.2
+SAY ~哼，你回来了。走路看着点脚下，行吗？那么，你又来找我帮忙？~
+++ ~是。请你跟我来。~ + b3.1
+++ ~这会儿不用。~ + b3.2
 END 
 
 IF ~~ b3.1
-SAY ~As you wish. Come, my children. We will accompany <CHARNAME> for now.~
+SAY ~如你所愿。来，我的孩儿们。我们暂且陪<CHARNAME>走一趟。~
 IF ~~ DO ~SetGlobal("C0PainaKickedOut","GLOBAL",0) JoinParty()~ EXIT
 END
 
 IF ~~ b3.2
-SAY ~Then I suggest you leave quickly.~
+SAY ~那我建议你快走。~
 IF ~~ EXIT
 END

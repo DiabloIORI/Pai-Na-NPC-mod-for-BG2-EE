@@ -6,13 +6,13 @@ See("C0Paina")
 !StateCheck("Dorn",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaDorn1","GLOBAL",0)~ THEN BDORN C0PainaDorn1
-~Your obsession towards useless vermin is a waste of potential, half-drow. I suggest you reconsider your course.~
+~半卓尔，你对那些无用害虫的痴迷是浪费天分。我劝你重新考虑你的路。~
 DO ~SetGlobal("C0PainaDorn1","GLOBAL",1)~
-== BC0PAINA ~Useless? You would not think so, if I allowed them to feast upon your eyes.~
-== BDORN ~You can try. Unlike you, I have no pathetic sentiments against crushing your little pets underfoot.~
-== BC0PAINA ~Harm any of my children, half-orc, and I will ensure that your death will be slow and painful.~
-== BDORN ~Your threats do not frighten me. Like all druids, you are weak and a fool.~
-== BC0PAINA ~They should. Even you must sleep eventually. My spiders do not.~
+== BC0PAINA ~无用？我若让它们啃你的眼睛，你就不会这么想。~
+== BDORN ~你尽可试试。我不像你，对把你这小宠物踩在脚下毫无那些可怜情绪。~
+== BC0PAINA ~半兽人，你敢伤我任何一个孩儿，我必让你死得又慢又痛。~
+== BDORN ~你的威胁吓不到我。跟所有德鲁伊一样，你软弱又愚蠢。~
+== BC0PAINA ~你该怕。连你也终归要睡。我的蜘蛛不睡。~
 EXIT
 
 CHAIN
@@ -21,13 +21,13 @@ See("C0Paina")
 !StateCheck("Dorn",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaDorn2","GLOBAL",0)~ THEN BDORN C0PainaDorn2
-~I cannot deny that your beasts have an... efficiency for overwhelming the weaklings we face, half-drow. But you waste what potential they have by cowering in your measly cocoon for your entire life?~
+~半卓尔，我不否认你的畜生对付我们面前的弱者有些……效率。可你一辈子缩在可怜茧里，浪费了它们的天分？~
 DO ~SetGlobal("C0PainaDorn2","GLOBAL",1)~
-== BC0PAINA ~And what would you have me do instead, hmm? Take over the city?~
-== BDORN ~Surely such a thing would be more purposeful than the wasteful life you lead.~
-== BC0PAINA ~Pfft. I'm neither interested nor moronic enough to try such a thing.~
-== BDORN ~That is only another way of saying you lack the stomach for it. Such an act would impress me, perhaps change my opinion of your bugs.~
-== BC0PAINA ~You are so pitifully short-sighted, Dorn. My spiders control more than what those pig-like eyes of yours can see. If you can realize that, Dorn, then perhaps you might impress *me*.~
+== BC0PAINA ~那你又要我做什么，嗯？接管整座城？~
+== BDORN ~那样总比你过的这浪费的一生更有目的。~
+== BC0PAINA ~呸。我既没兴趣，也没蠢到去试。~
+== BDORN ~那不过是说你没那个胆子的另一种说法。这等事会让我刮目相看，也许改变我对你那些虫子的看法。~
+== BC0PAINA ~多恩，你目光短浅得可怜。我的蜘蛛掌控的东西，比你那双猪眼能看见的多得多。你若能明白这一点，多恩，也许你会让*我*刮目相看。~
 EXIT
 
 // ToB
@@ -38,13 +38,13 @@ See("C0Paina")
 !StateCheck("Dorn",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaToBDorn1","GLOBAL",0)~ THEN BDORN25 C0PainaToBDorn1
-~You and your insects still live.~
+~你和你的虫子竟还活着。~
 DO ~SetGlobal("C0PainaToBDorn1","GLOBAL",1)~
-== BC0PAI25 ~Are you surprised by that?~
-== BDORN25 ~Surprised, and disappointed. I had thought our foes more capable.~
-== BC0PAI25 ~Spiders are the most intelligent of all beasts. Fragile and delicate, but we can overwhelm anything in our way.~
-== BDORN25 ~Believe in what fantasies you will. Perhaps the bright flames of a mage's fireball will rouse you from your ignorance, but I doubt it.~
-== BC0PAI25 ~You are truly a pitiful creature, Dorn. The day you realize the might of the arachnids will be your final moment.~
+== BC0PAI25 ~你对此感到意外？~
+== BDORN25 ~意外，而且失望。我原以为我们的敌人更有本事。~
+== BC0PAI25 ~蜘蛛是万兽中最聪慧的。脆弱精巧，却能压垮任何挡路的东西。~
+== BDORN25 ~你爱信什么幻想就信吧。也许法师火球那亮焰能把你从无知中唤醒，不过我怀疑。~
+== BC0PAI25 ~你真是个可怜的东西，多恩。你明白蛛类之威的那一天，就是你的末日。~
 EXIT
 
 // Hexxat
@@ -55,11 +55,11 @@ See("C0Paina")
 !StateCheck("Hexxat",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaHexxat1","GLOBAL",0)~ THEN BHEXXAT C0PainaHexxat1
-~I'm surprised that anyone alive would make their home in the tombs. Even I was tired of living there.~
+~我意外竟有人活着把家安在墓穴里。连我都住厌了。~
 DO ~SetGlobal("C0PainaHexxat1","GLOBAL",1)~
-== BC0PAINA ~It was the most convenient place for me to do my duty. Many of my charges were born there, and human fools rarely trespass.~
-== BHEXXAT ~<CHARNAME> did.~
-== BC0PAINA ~That's true. But there is always an exception.~
+== BC0PAINA ~那是我履行职责最方便的地方。我许多孩儿生在那里，而人类蠢货很少擅入。~
+== BHEXXAT ~<CHARNAME>就入了。~
+== BC0PAINA ~确实。可总有例外。~
 EXIT
 
 CHAIN
@@ -68,15 +68,15 @@ See("C0Paina")
 !StateCheck("Hexxat",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaHexxat1","GLOBAL",0)~ THEN BHEXXAT C0PainaHexxat1
-~You're not as opposed to me as other druids I've met. Does my existence not go against the natural order?~
+~你不像别的德鲁伊那样反对我。我的存在不违背自然秩序吗？~
 DO ~SetGlobal("C0PainaHexxat1","GLOBAL",1)~
-== BC0PAINA ~Perhaps it does. My master would have thrown a fit if she met you.~
-== BHEXXAT ~But you won't?~
-== BC0PAINA ~I don't necessarily care for... what you are. But you're a survivor, like me. I don't see any reason to fear you.~
-== BHEXXAT ~Then you're the first. Most others dread I might drain their blood without warning if my hunger takes me.~
-== BC0PAINA ~Oh, make no mistake - my spiders are always watching. If you try anything, I *will* end you. But I don't doubt you're wise enough to realize that.~
-== BHEXXAT ~Fear not, Pai'Na. I have no such intention.~
-== BC0PAINA ~So you say. But I never trusted Bodhi, neither do I trust you... vampire.~
+== BC0PAINA ~也许违背。我师父若见了你，准要发作。~
+== BHEXXAT ~可你不会？~
+== BC0PAINA ~我未必喜欢……你这样的东西。可你是幸存者，跟我一样。我看不出有什么理由怕你。~
+== BHEXXAT ~那你是头一个。多数人都怕我饥饿一来，就不声不响吸干他们的血。~
+== BC0PAINA ~哦，别弄错——我的蜘蛛时刻盯着。你要乱来，我*必*取你性命。可我不怀疑你聪明到能明白这点。~
+== BHEXXAT ~别担心，派娜。我无此意。~
+== BC0PAINA ~你这么说。可我从不信波迪，也不信你……吸血鬼。~
 EXIT
 
 // ToB
@@ -87,14 +87,14 @@ See("C0Paina")
 !StateCheck("Hexxat",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaToBHexxat1","GLOBAL",0)~ THEN BC0PAI25 C0PainaToBHexxat1
-~You are from the Chultan jungles, correct?~
+~你来自楚尔特丛林，对吧？~
 DO ~SetGlobal("C0PainaToBHexxat1","GLOBAL",1)~
-== BHEXXA25 ~Yes.~
-== BC0PAI25 ~Are spiders treated with respect there?~
-== BHEXXA25 ~I am not sure. I have been out of touch with nature for a long time.~
-== BC0PAI25 ~A shame. I've considered travelling there myself, to see if there are any breeds I haven't seen yet.~
-== BHEXXA25 ~There are. You might like them, though I doubt they would feel the same of you.~
-== BC0PAI25 ~In case you haven't noticed, I have a way with spiders. I doubt I'd be in any danger.~
+== BHEXXA25 ~是。~
+== BC0PAI25 ~那里蜘蛛受敬重吗？~
+== BHEXXA25 ~我不确定。我已久与自然断了联系。~
+== BC0PAI25 ~可惜。我本考虑亲自去一趟，看看还有没有我没见过的品种。~
+== BHEXXA25 ~有的。你也许会喜欢它们，不过我怀疑它们不会同样看你。~
+== BC0PAI25 ~你或许没注意，我有一套对付蜘蛛的本事。我不觉得我会有什么危险。~
 EXIT
 
 // Neera
@@ -105,14 +105,14 @@ See("Neera")
 !StateCheck("Neera",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaNeera1","GLOBAL",0)~ THEN BNEERA C0PainaNeera1
-~Er, hello, Pai'Na. We haven't talked at all yet, have we?~
+~呃，你好，派娜。我们还没说过话吧？~
 DO ~SetGlobal("C0PainaNeera1","GLOBAL",1)~
-== BC0PAINA ~No, and I prefer it that way.~
-== BNEERA ~Aw, don't be like that. We're both half-elf girls, so we've got something in common, right?~
-== BC0PAINA ~I'm half-*drow*, fool. We have nothing in common. Stay away from me.~
-== BNEERA ~What? I'm not that scary or anything. Huh, do I stink?~
-== BC0PAINA ~Your wild magic threatens my charges. They are delicate and you terrify them. If you injure any of them with your spells, I will make you regret it.~
-== BNEERA ~Oh. Well, uh, I guess I'll just stay away from them.~
+== BC0PAINA ~没有，我也宁愿如此。~
+== BNEERA ~唉，别这样。我们俩都是半精灵姑娘，总有共同之处吧？~
+== BC0PAINA ~我是*半*卓尔，蠢货。我们毫无共同之处。离我远点。~
+== BNEERA ~什么？我一点也不吓人啊。呃，我身上很臭吗？~
+== BC0PAINA ~你的狂野魔法威胁我的孩儿们。它们脆弱，你让它们害怕。你要用你的法术伤到它们任何一个，我会让你后悔。~
+== BNEERA ~哦。那，呃，我想我就离它们远点吧。~
 EXIT
 
 CHAIN
@@ -121,18 +121,18 @@ See("Neera")
 !StateCheck("Neera",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaNeera2","GLOBAL",0)~ THEN BNEERA C0PainaNeera2
-~Hey... Pai'Na. Could you come take a look at this?~
+~嘿……派娜。你能过来看看这个吗？~
 DO ~SetGlobal("C0PainaNeera2","GLOBAL",1)~
-== BC0PAINA ~I have no interest in your wizardly tools, wild mage. Keep your distance.~
-== BNEERA ~Uh, that's fair enough, but this isn't mine. In fact, it might be yours. Hard to say, the way it is now.~
-== BC0PAINA ~Y-you...! what did you do to it?!~
-== BNEERA ~I have no idea, honest! It was just supposed to be a spell to heat the cooking pot, and I guess this little guy just happened to be crawling on the side.~
-== BC0PAINA ~That's a female, you nitwit!~
-== BNEERA ~Right. You'd know best. But anyway, I didn't mean to turn its legs into... uh, whatever they became. They kind of look like little fins...~
-== BC0PAINA ~Reverse this right this instant, before I tear your guts out through your throat and feed them to my brood!~
-== BNEERA ~Eek! Okay, okay, just calm down and I'll, uh... how about this! 'Hex-o presto kazoo-ey'!~
-== BNEERA ~...Huh, what d'ya know. That actually worked. Whew, guess my guts get to stay inside of me tonight...~
-== BC0PAINA ~Grr...~
+== BC0PAINA ~我对你那些法师玩意没兴趣，狂法师。保持距离。~
+== BNEERA ~呃，那也算合理，可这不是我的。事实上，它也许是你的。看它现在这模样，很难说。~
+== BC0PAINA ~你——！你把它怎么了？！~
+== BNEERA ~我完全不知道，真的！本来只是个给锅加热的法术，我猜这小家伙刚好在锅边爬。~
+== BC0PAINA ~那是母的，你这笨蛋！~
+== BNEERA ~对。你最懂。可总之，我不是故意把它的腿变成……呃，反正是那样了。它们有点像小鳍……~
+== BC0PAINA ~马上把它变回去，不然我就从你喉咙里扯出你的肠子喂我的子嗣！~
+== BNEERA ~呀！好，好，冷静点，我来，呃……这样如何！“Hex-o presto kazoo-ey”！~
+== BNEERA ~……呃，还真行。居然成了。呼，看来今晚我的肠子还能留在肚子里……~
+== BC0PAINA ~呃……~
 EXIT
 
 // ToB 
@@ -143,17 +143,17 @@ See("Neera")
 !StateCheck("Neera",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaNeeraToB1","GLOBAL",0)~ THEN BC0PAI25 C0PainaNeeraToB1
-~*sniff* Something smells like burning...~
+~*嗅* 有什么东西闻着像烧焦了……~
 DO ~SetGlobal("C0PainaNeeraToB1","GLOBAL",1)~
-== BNEERA25 ~Really? ...yeah, I smell it too. Where's it coming from?~
-== BC0PAI25 ~Your robes.~
-== BNEERA25 ~Huh, you're right. What's in there?~
-== BNEERA25 ~Oh. Oh, dear.~
-== BC0PAI25 ~What?~
-== BNEERA25 ~Uh, nothing.~
-== BC0PAI25 ~I don't believe you. What are you hiding in your hand?~
-== BNEERA25 ~It's nothing! Really!~
-== BC0PAI25 ~I warn you, mage, if that was a spider you burned, I will make sure you pay dearly for it.~
+== BNEERA25 ~真的？……是，我也闻到了。从哪儿来的？~
+== BC0PAI25 ~你的袍子。~
+== BNEERA25 ~呃，你说得对。里面有什么？~
+== BNEERA25 ~哦。哦，天。~
+== BC0PAI25 ~什么？~
+== BNEERA25 ~呃，没什么。~
+== BC0PAI25 ~我不信。你手里藏着什么？~
+== BNEERA25 ~没什么！真的！~
+== BC0PAI25 ~我警告你，法师，那若是你烧死的蜘蛛，我必让你付出惨重代价。~
 EXIT
 
 // Rasaad
@@ -164,13 +164,13 @@ See("Rasaad")
 !StateCheck("Rasaad",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaRasaad1","GLOBAL",0)~ THEN BC0PAINA C0PainaRasaad1
-~They say that monks are trained well enough to hold an ant between their fingers without crushing it.~
+~他们说武僧训练有素，能在指间夹住一只蚂蚁而不捏死它。~
 DO ~SetGlobal("C0PainaRasaad1","GLOBAL",1)~
-== BRASAAD ~It is true that many of us are capable of such dexterous moves.~
-== BC0PAINA ~Then I hope you will keep alert at all times to ensure you never crush a spider inadvertently.~
-== BRASAAD ~I will make sure to watch out for them.~
-== BC0PAINA ~Good. And while you're at it, collect me some insects. My spiders prefer them alive.~
-== BRASAAD ~Er, as you wish, my friend.~
+== BRASAAD ~确实，我们许多人能做到这般灵巧的动作。~
+== BC0PAINA ~那我希望你时刻留神，确保永不无意中踩死蜘蛛。~
+== BRASAAD ~我会留心它们的。~
+== BC0PAINA ~好。顺便，替我收些昆虫。我的蜘蛛更爱吃活的。~
+== BRASAAD ~呃，如你所愿，我的朋友。~
 EXIT
 
 CHAIN
@@ -180,15 +180,15 @@ See("Rasaad")
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaRasaad2","GLOBAL",0)
 LevelGT("Rasaad",10)~ THEN BC0PAINA C0PainaRasaad2
-~Interesting. You have developed a resistance to toxins not unlike that of a hivemaster, monk. What is your secret?~
+~有意思。武僧，你练出了不亚于群巢大师的抗毒。你的秘诀是什么？~
 DO ~SetGlobal("C0PainaRasaad2","GLOBAL",1)~
-== BRASAAD ~There is no secret, my friend. This is but a stage of a monk's training. I may banish poisons that enter my bloodstream through force of will.~
-== BC0PAINA ~Hmm, fascinating. I demand that you demonstrate it to me.~
-== BRASAAD ~Are you suggesting that I allow you to poison me, Pai'Na?~
-== BC0PAINA ~Oh, don't panic. I have antidotes for... most poisons in my collection. Besides, if your immunity is as absolute as you claim, this should be like drinking water to you. I must see this technique of yours for myself.~
-== BRASAAD ~Hmm. I would never have backed off from such a bold challenge in my youth. I accept.~
-== BC0PAINA ~Good. Make no mistake, monk - I will create a poison even *you* won't be able to neutralize.~
-== BRASAAD ~I... look forward to the challenge.~
+== BRASAAD ~没有秘诀，我的朋友。这只是武僧训练的一个阶段。我可以凭意志将进入血液的毒素逐出。~
+== BC0PAINA ~嗯，真有意思。我要求你演示给我看。~
+== BRASAAD ~你是在建议我让你下毒，派娜？~
+== BC0PAINA ~哦，别慌。我的收藏里有……大多数毒的解毒剂。再说，你若真如你所说的绝对免疫，这对你该像喝水一样。我必须亲眼看看你这门技法。~
+== BRASAAD ~嗯。我年轻时绝不会回避这样大胆的挑战。我接受。~
+== BC0PAINA ~好。别弄错，武僧——我会配出一种连*你*也化不了的毒。~
+== BRASAAD ~我……期待这个挑战。~
 EXIT
 
 CHAIN
@@ -197,13 +197,13 @@ See("Rasaad")
 !StateCheck("Rasaad",CD_STATE_NOTVALID)
 !StateCheck("C0Paina",CD_STATE_NOTVALID)
 Global("C0PainaToBRasaad1","GLOBAL",0)~ THEN BRASAA25 C0PainaToBRasaad1
-~What drives you to remain with us, Pai'Na? Forgive me for my doubts, but you owe little to <CHARNAME>, yet you would risk life and limb regardless.~
+~是什么驱使你留在我们身边，派娜？原谅我的疑虑，可你并不欠<CHARNAME>什么，却仍愿拿性命冒险。~
 DO ~SetGlobal("C0PainaToBRasaad1","GLOBAL",1)~
-== BC0PAI25 ~More than my own limbs, monk. What business is it of yours?~
-== BRASAA25 ~I have come to know you better, despite your... reclusiveness. I see a woman whose heart is in the right place, despite her sour exterior. Am I wrong to presume so?~
-== BC0PAI25 ~Does it matter? If you are confident I'm not going anywhere, then surely my reasons mean nothing.~
-== BRASAA25 ~I would like to know. You have gained my respect for your dedication, but there is still so little I know of you. I thought, perhaps, we could transition from respect to friendship.~
-== BC0PAI25 ~Hmph. You presume too much, bald one... but I remain because I find your presence... tolerable. I could do worse for company. Is that enough for you?~
-== BRASAA25 ~It is. Thank you for giving your thoughts.~
+== BC0PAI25 ~比我的四肢还多，武僧。这与你何干？~
+== BRASAA25 ~尽管你……孤僻，我已渐渐了解你。我看到一个女人，外表酸刻，心却摆在对的地方。我这样揣度错了吗？~
+== BC0PAI25 ~那要紧吗？你若确信我不会走，我的理由自然毫无意义。~
+== BRASAA25 ~我想知道。你的执着已赢得我的敬重，可我对你知道的还是太少。我想，也许我们可以从敬重走到友谊。~
+== BC0PAI25 ~哼。你揣度得太多，秃头……可我留下，是因为我觉得你的存在……还能忍受。换别人作伴只会更糟。这对你够了吗？~
+== BRASAA25 ~够了。谢谢你肯说出来。~
 EXIT
 
