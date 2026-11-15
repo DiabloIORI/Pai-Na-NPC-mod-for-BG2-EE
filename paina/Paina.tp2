@@ -327,7 +327,7 @@ ACTION_IF GAME_IS ~eet~ BEGIN
       dialog_ToB = "C0PAI25"
       //traFile = EVAL "%MOD_FOLDER%/translations/%LANGUAGE%/paina.tra"
       //string = "@1"
-      string = "Bring me Pai'Na, the half-drow hivemaster."
+      string = "把半卓尔群巢大师派娜带来见我。"
       stringPosDV = "Quayle"
   END
 END ELSE BEGIN
